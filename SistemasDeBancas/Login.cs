@@ -9,28 +9,36 @@ using System.Windows.Forms;
 
 namespace SistemasDeBancas
 {
+    
     public partial class Login : Form
     {
+        
         public Login()
         {
+            
             InitializeComponent();
+           
         }
 
         private void Cancelar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Close();
+
         }
 
         private void Login_Load(object sender, EventArgs e)
         {
+            MaximizeBox = false;
 
         }
 
         private void Entrar_Click(object sender, EventArgs e)
         {
-            VentanaPrincipal VP = new VentanaPrincipal();
-            VP.Visible = true;
+            
+          
+            Close();            
             
         }
+        
     }
 }

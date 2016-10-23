@@ -59,7 +59,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(92, 20);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Contraceña";
+            this.label2.Text = "Contraseña";
             // 
             // Usuario
             // 

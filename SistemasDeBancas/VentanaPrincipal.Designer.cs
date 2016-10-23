@@ -50,13 +50,14 @@
             this.UsuarioButton = new System.Windows.Forms.Button();
             this.ReporteButton = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.LoteriasComboBox = new System.Windows.Forms.ComboBox();
             this.Quiniela = new System.Windows.Forms.ListView();
             this.TotalQuiniela = new System.Windows.Forms.TextBox();
             this.TotalPale = new System.Windows.Forms.TextBox();
             this.TotalTripleta = new System.Windows.Forms.TextBox();
             this.Total = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.AbrirButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -73,6 +74,8 @@
             // 
             // NumeroTicket
             // 
+            this.NumeroTicket.AccessibleName = "";
+            this.NumeroTicket.Enabled = false;
             this.NumeroTicket.Location = new System.Drawing.Point(70, 15);
             this.NumeroTicket.Name = "NumeroTicket";
             this.NumeroTicket.ReadOnly = true;
@@ -93,6 +96,7 @@
             // 
             // Monto
             // 
+            this.Monto.AccessibleName = "";
             this.Monto.Location = new System.Drawing.Point(70, 50);
             this.Monto.Name = "Monto";
             this.Monto.Size = new System.Drawing.Size(100, 20);
@@ -112,6 +116,7 @@
             // 
             // Numero
             // 
+            this.Numero.AccessibleName = "";
             this.Numero.Location = new System.Drawing.Point(240, 52);
             this.Numero.Name = "Numero";
             this.Numero.Size = new System.Drawing.Size(121, 20);
@@ -119,6 +124,7 @@
             // 
             // Pale
             // 
+            this.Pale.AccessibleName = "";
             this.Pale.BackColor = System.Drawing.Color.White;
             this.Pale.ForeColor = System.Drawing.Color.DodgerBlue;
             this.Pale.Location = new System.Drawing.Point(198, 128);
@@ -129,6 +135,7 @@
             // 
             // Tripleta
             // 
+            this.Tripleta.AccessibleName = "";
             this.Tripleta.ForeColor = System.Drawing.Color.DodgerBlue;
             this.Tripleta.Location = new System.Drawing.Point(378, 128);
             this.Tripleta.Name = "Tripleta";
@@ -175,29 +182,32 @@
             // 
             // GuardarButton
             // 
+            this.GuardarButton.AccessibleName = "";
             this.GuardarButton.BackColor = System.Drawing.Color.Transparent;
             this.GuardarButton.BackgroundImage = global::SistemasDeBancas.Properties.Resources.floppy_drive_3_12_icon;
             this.GuardarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.GuardarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GuardarButton.ForeColor = System.Drawing.Color.DodgerBlue;
             this.GuardarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.GuardarButton.Location = new System.Drawing.Point(632, 52);
+            this.GuardarButton.Location = new System.Drawing.Point(632, 48);
             this.GuardarButton.Name = "GuardarButton";
             this.GuardarButton.Size = new System.Drawing.Size(136, 48);
             this.GuardarButton.TabIndex = 12;
             this.GuardarButton.Text = "Guardar";
             this.GuardarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.GuardarButton.UseVisualStyleBackColor = false;
+            this.GuardarButton.Click += new System.EventHandler(this.GuardarButton_Click);
             // 
             // AnularButton
             // 
+            this.AnularButton.AccessibleName = "";
             this.AnularButton.BackColor = System.Drawing.Color.Transparent;
             this.AnularButton.BackgroundImage = global::SistemasDeBancas.Properties.Resources.Anular;
             this.AnularButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.AnularButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AnularButton.ForeColor = System.Drawing.Color.DodgerBlue;
             this.AnularButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.AnularButton.Location = new System.Drawing.Point(632, 212);
+            this.AnularButton.Location = new System.Drawing.Point(632, 198);
             this.AnularButton.Name = "AnularButton";
             this.AnularButton.Size = new System.Drawing.Size(136, 48);
             this.AnularButton.TabIndex = 13;
@@ -207,13 +217,14 @@
             // 
             // Nuevobutton
             // 
+            this.Nuevobutton.AccessibleName = "";
             this.Nuevobutton.BackColor = System.Drawing.Color.Transparent;
             this.Nuevobutton.BackgroundImage = global::SistemasDeBancas.Properties.Resources.New;
             this.Nuevobutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.Nuevobutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Nuevobutton.ForeColor = System.Drawing.Color.DodgerBlue;
             this.Nuevobutton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Nuevobutton.Location = new System.Drawing.Point(632, 106);
+            this.Nuevobutton.Location = new System.Drawing.Point(632, 98);
             this.Nuevobutton.Name = "Nuevobutton";
             this.Nuevobutton.Size = new System.Drawing.Size(136, 48);
             this.Nuevobutton.TabIndex = 14;
@@ -223,13 +234,14 @@
             // 
             // ReimprimirButton
             // 
+            this.ReimprimirButton.AccessibleName = "";
             this.ReimprimirButton.BackColor = System.Drawing.Color.Transparent;
             this.ReimprimirButton.BackgroundImage = global::SistemasDeBancas.Properties.Resources.Reimprimir;
             this.ReimprimirButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ReimprimirButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ReimprimirButton.ForeColor = System.Drawing.Color.DodgerBlue;
             this.ReimprimirButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.ReimprimirButton.Location = new System.Drawing.Point(632, 159);
+            this.ReimprimirButton.Location = new System.Drawing.Point(632, 148);
             this.ReimprimirButton.Name = "ReimprimirButton";
             this.ReimprimirButton.Size = new System.Drawing.Size(136, 48);
             this.ReimprimirButton.TabIndex = 15;
@@ -255,7 +267,7 @@
             this.SalirButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SalirButton.ForeColor = System.Drawing.Color.DodgerBlue;
             this.SalirButton.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.SalirButton.Location = new System.Drawing.Point(632, 424);
+            this.SalirButton.Location = new System.Drawing.Point(632, 448);
             this.SalirButton.Name = "SalirButton";
             this.SalirButton.Size = new System.Drawing.Size(136, 48);
             this.SalirButton.TabIndex = 17;
@@ -266,13 +278,14 @@
             // 
             // PerfilesButton
             // 
+            this.PerfilesButton.AccessibleName = "";
             this.PerfilesButton.BackColor = System.Drawing.Color.Transparent;
             this.PerfilesButton.BackgroundImage = global::SistemasDeBancas.Properties.Resources.perfir;
             this.PerfilesButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.PerfilesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.PerfilesButton.ForeColor = System.Drawing.Color.DodgerBlue;
             this.PerfilesButton.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.PerfilesButton.Location = new System.Drawing.Point(632, 318);
+            this.PerfilesButton.Location = new System.Drawing.Point(632, 298);
             this.PerfilesButton.Name = "PerfilesButton";
             this.PerfilesButton.Size = new System.Drawing.Size(136, 48);
             this.PerfilesButton.TabIndex = 18;
@@ -282,29 +295,32 @@
             // 
             // UsuarioButton
             // 
+            this.UsuarioButton.AccessibleName = "";
             this.UsuarioButton.BackColor = System.Drawing.Color.Transparent;
             this.UsuarioButton.BackgroundImage = global::SistemasDeBancas.Properties.Resources.Actions_user_group_new_icon;
             this.UsuarioButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.UsuarioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UsuarioButton.ForeColor = System.Drawing.Color.DodgerBlue;
             this.UsuarioButton.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.UsuarioButton.Location = new System.Drawing.Point(632, 371);
+            this.UsuarioButton.Location = new System.Drawing.Point(632, 348);
             this.UsuarioButton.Name = "UsuarioButton";
             this.UsuarioButton.Size = new System.Drawing.Size(136, 48);
             this.UsuarioButton.TabIndex = 19;
             this.UsuarioButton.Text = "Usuarios";
             this.UsuarioButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.UsuarioButton.UseVisualStyleBackColor = false;
+            this.UsuarioButton.Click += new System.EventHandler(this.UsuarioButton_Click);
             // 
             // ReporteButton
             // 
+            this.ReporteButton.AccessibleName = "";
             this.ReporteButton.BackColor = System.Drawing.Color.Transparent;
             this.ReporteButton.BackgroundImage = global::SistemasDeBancas.Properties.Resources.Reporte;
             this.ReporteButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ReporteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ReporteButton.ForeColor = System.Drawing.Color.DodgerBlue;
             this.ReporteButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.ReporteButton.Location = new System.Drawing.Point(632, 265);
+            this.ReporteButton.Location = new System.Drawing.Point(632, 248);
             this.ReporteButton.Name = "ReporteButton";
             this.ReporteButton.Size = new System.Drawing.Size(136, 48);
             this.ReporteButton.TabIndex = 20;
@@ -324,16 +340,18 @@
             this.label7.TabIndex = 21;
             this.label7.Text = "Loteria";
             // 
-            // comboBox1
+            // LoteriasComboBox
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(240, 17);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 22;
+            this.LoteriasComboBox.AccessibleName = "";
+            this.LoteriasComboBox.FormattingEnabled = true;
+            this.LoteriasComboBox.Location = new System.Drawing.Point(240, 17);
+            this.LoteriasComboBox.Name = "LoteriasComboBox";
+            this.LoteriasComboBox.Size = new System.Drawing.Size(121, 21);
+            this.LoteriasComboBox.TabIndex = 22;
             // 
             // Quiniela
             // 
+            this.Quiniela.AccessibleName = "";
             this.Quiniela.BackColor = System.Drawing.Color.White;
             this.Quiniela.ForeColor = System.Drawing.Color.DodgerBlue;
             this.Quiniela.Location = new System.Drawing.Point(18, 128);
@@ -344,6 +362,7 @@
             // 
             // TotalQuiniela
             // 
+            this.TotalQuiniela.AccessibleName = "";
             this.TotalQuiniela.BackColor = System.Drawing.Color.DodgerBlue;
             this.TotalQuiniela.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TotalQuiniela.ForeColor = System.Drawing.Color.White;
@@ -355,6 +374,7 @@
             // 
             // TotalPale
             // 
+            this.TotalPale.AccessibleName = "";
             this.TotalPale.BackColor = System.Drawing.Color.DodgerBlue;
             this.TotalPale.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TotalPale.ForeColor = System.Drawing.Color.White;
@@ -365,6 +385,7 @@
             // 
             // TotalTripleta
             // 
+            this.TotalTripleta.AccessibleName = "";
             this.TotalTripleta.BackColor = System.Drawing.Color.DodgerBlue;
             this.TotalTripleta.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TotalTripleta.ForeColor = System.Drawing.Color.White;
@@ -375,6 +396,7 @@
             // 
             // Total
             // 
+            this.Total.AccessibleName = "";
             this.Total.BackColor = System.Drawing.Color.White;
             this.Total.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Total.ForeColor = System.Drawing.Color.DodgerBlue;
@@ -395,19 +417,38 @@
             this.label8.TabIndex = 27;
             this.label8.Text = "Total";
             // 
+            // AbrirButton
+            // 
+            this.AbrirButton.BackColor = System.Drawing.Color.Transparent;
+            this.AbrirButton.BackgroundImage = global::SistemasDeBancas.Properties.Resources.img;
+            this.AbrirButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.AbrirButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AbrirButton.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.AbrirButton.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.AbrirButton.Location = new System.Drawing.Point(632, 398);
+            this.AbrirButton.Name = "AbrirButton";
+            this.AbrirButton.Size = new System.Drawing.Size(136, 48);
+            this.AbrirButton.TabIndex = 28;
+            this.AbrirButton.Text = "Abrir Ventas";
+            this.AbrirButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.AbrirButton.UseVisualStyleBackColor = false;
+            this.AbrirButton.Click += new System.EventHandler(this.AbrirVentas_Click);
+            // 
             // VentanaPrincipal
             // 
+            this.AccessibleName = "";
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(798, 512);
+            this.Controls.Add(this.AbrirButton);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.Total);
             this.Controls.Add(this.TotalTripleta);
             this.Controls.Add(this.TotalPale);
             this.Controls.Add(this.TotalQuiniela);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.LoteriasComboBox);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.ReporteButton);
             this.Controls.Add(this.UsuarioButton);
@@ -433,6 +474,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "VentanaPrincipal";
             this.Text = "Ventas de Loterias";
+            this.Load += new System.EventHandler(this.VentanaPrincipal_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -443,30 +485,31 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox NumeroTicket;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox Monto;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox Numero;
-        private System.Windows.Forms.ListView Pale;
-        private System.Windows.Forms.ListView Tripleta;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Button GuardarButton;
-        private System.Windows.Forms.Button AnularButton;
-        private System.Windows.Forms.Button Nuevobutton;
-        private System.Windows.Forms.Button ReimprimirButton;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Button SalirButton;
-        private System.Windows.Forms.Button PerfilesButton;
-        private System.Windows.Forms.Button UsuarioButton;
-        private System.Windows.Forms.Button ReporteButton;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ListView Quiniela;
-        private System.Windows.Forms.TextBox TotalQuiniela;
-        private System.Windows.Forms.TextBox TotalPale;
-        private System.Windows.Forms.TextBox TotalTripleta;
-        private System.Windows.Forms.TextBox Total;
         private System.Windows.Forms.Label label8;
+        public System.Windows.Forms.TextBox Monto;
+        public System.Windows.Forms.TextBox Numero;
+        public System.Windows.Forms.ListView Pale;
+        public System.Windows.Forms.ListView Tripleta;
+        public System.Windows.Forms.Button AnularButton;
+        public System.Windows.Forms.Button Nuevobutton;
+        public System.Windows.Forms.Button ReimprimirButton;
+        public System.Windows.Forms.Button PerfilesButton;
+        public System.Windows.Forms.Button UsuarioButton;
+        public System.Windows.Forms.Button ReporteButton;
+        public System.Windows.Forms.ComboBox LoteriasComboBox;
+        public System.Windows.Forms.ListView Quiniela;
+        public System.Windows.Forms.TextBox TotalQuiniela;
+        public System.Windows.Forms.TextBox TotalPale;
+        public System.Windows.Forms.TextBox TotalTripleta;
+        public System.Windows.Forms.TextBox Total;
+        public System.Windows.Forms.Button AbrirButton;
+        public System.Windows.Forms.Button GuardarButton;
     }
 }
