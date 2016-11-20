@@ -13,6 +13,6 @@ namespace DAL
         {
 
         }
-        public virtual DbSet<Usuarios> Usuario { get; set; }
+        public virtual DbSet<Usuarios> usuarios { get; set; }
     }
 }

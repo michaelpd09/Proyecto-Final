@@ -1,13 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 using Entidades;
 using BLL;
+using SistemasDeBancas.Consulta;
 
 namespace SistemasDeBancas
 {
@@ -32,8 +27,17 @@ namespace SistemasDeBancas
         {
             NombreTextBox.ReadOnly = false;
             ClaveTextBox.ReadOnly = false;
+            ConfirmarTextBox.ReadOnly = false;
             GuardarButton.Enabled = true;
-            EliminarButton.Enabled = true;
+          
+            PerfilComboBox.Enabled = true;
+            ConfirmarTextBox.Enabled = true;
+            NombreTextBox.Clear();
+            ClaveTextBox.Clear();
+            ConfirmarTextBox.Clear();
+            PerfilComboBox.Text = "";
+
+
         }
 
         private void GuardarButton_Click_1(object sender, EventArgs e)
@@ -41,54 +45,81 @@ namespace SistemasDeBancas
             Usuarios usuario = new Usuarios();
 
             if (!Validar())
-            {
-                MessageBox.Show("Complete los datos");
                 return;
-            }
-
-            usuario = LlenarClase();
-
+            usuario.Tipo = PerfilComboBox.SelectedItem.ToString();
+            usuario.Nombre = NombreTextBox.Text;
+            usuario.Clave = ClaveTextBox.Text;
+           
             if (UsuariosBLL.Guardar(usuario))
-            {
-                NuevoButton.PerformClick();
+                   MessageBox.Show("Guardado.....");
+                else
+                    MessageBox.Show("Error al guardar");
 
-                MessageBox.Show("Guardado.....");
-            }
+            
         }
 
 
         private bool Validar()
         {
             bool retorno = true;
+            errorProvider1.Clear();
+            errorProvider2.Clear();
+            errorProvider3.Clear();
+            errorProvider4.Clear();
             if (string.IsNullOrEmpty(NombreTextBox.Text))
             {
                 errorProvider1.SetError(NombreTextBox, "Debe introducir el nombre!!!");
                 retorno = false;
+                
             }
             else
             if (string.IsNullOrEmpty(ClaveTextBox.Text))
             {
                 errorProvider2.SetError(ClaveTextBox, "Debe introducir una Contraseña!!!");
                 retorno = false;
+               
             }
+            
+            else
+                if(ClaveTextBox.Text != ConfirmarTextBox.Text)
+            {
+                errorProvider4.SetError(ConfirmarTextBox, "Las Contraseñas no Coinciden!!!");
+                retorno = false;
+            }
+            else
+             if (string.IsNullOrEmpty(PerfilComboBox.Text))
+            {
+                errorProvider3.SetError(PerfilComboBox, "Debe introducir el Perfir!!!");
+                retorno = false;
+
+            }
+
             return retorno;
         }
-        private Usuarios LlenarClase()
-        {
-            Usuarios usuario = new Usuarios();
-
-            usuario.UsuarioID = Utilidades.Toint(UsuarioIDTextBox.Text);
-            usuario.Nombre = NombreTextBox.Text;
-            usuario.Clave = ClaveTextBox.Text;
-            return usuario;
-        }
+      
 
         private void EliminarButton_Click(object sender, EventArgs e)
         {
-
+            Close();
         }
 
         private void BuscarButton_Click(object sender, EventArgs e)
+        {
+
+            ConsultaUsuarios cu = new ConsultaUsuarios();
+            cu.Visible = true;
+            Close();
+           
+        }
+        
+        private void RegistroUsuarios_Load(object sender, EventArgs e)
+        {
+            MaximizeBox = false;
+            MinimizeBox = false;
+
+        }
+
+        private void PerfilComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

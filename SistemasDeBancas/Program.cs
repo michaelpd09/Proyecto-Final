@@ -13,10 +13,14 @@ namespace SistemasDeBancas
         [STAThread]
         static void Main()
         {
+           
+         Application.EnableVisualStyles();
+         Application.SetCompatibleTextRenderingDefault(false);
+         //    if (Login.Validar())
+                Application.Run(new VentanaPrincipal());
             
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new VentanaPrincipal());
+               
+                
             
 
 

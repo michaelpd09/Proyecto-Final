@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -35,6 +36,10 @@
             this.Clave = new System.Windows.Forms.TextBox();
             this.Entrar = new System.Windows.Forms.Button();
             this.Salir = new System.Windows.Forms.Button();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -67,6 +72,8 @@
             this.Usuario.Name = "Usuario";
             this.Usuario.Size = new System.Drawing.Size(146, 20);
             this.Usuario.TabIndex = 2;
+            this.Usuario.TextChanged += new System.EventHandler(this.Usuario_TextChanged);
+            this.Usuario.Enter += new System.EventHandler(this.Clave_TextChanged);
             // 
             // Clave
             // 
@@ -75,6 +82,7 @@
             this.Clave.PasswordChar = '*';
             this.Clave.Size = new System.Drawing.Size(146, 20);
             this.Clave.TabIndex = 3;
+            this.Clave.TextChanged += new System.EventHandler(this.Clave_TextChanged);
             // 
             // Entrar
             // 
@@ -100,8 +108,17 @@
             this.Salir.UseVisualStyleBackColor = true;
             this.Salir.Click += new System.EventHandler(this.Cancelar_Click);
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // errorProvider2
+            // 
+            this.errorProvider2.ContainerControl = this;
+            // 
             // Login
             // 
+            this.AcceptButton = this.Entrar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
@@ -114,8 +131,12 @@
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Login_Load);
+            this.Enter += new System.EventHandler(this.Login_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -125,9 +146,11 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox Usuario;
         private System.Windows.Forms.TextBox Clave;
         private System.Windows.Forms.Button Entrar;
         private System.Windows.Forms.Button Salir;
+        public System.Windows.Forms.TextBox Usuario;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.ErrorProvider errorProvider2;
     }
 }
