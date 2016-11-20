@@ -22,7 +22,9 @@ namespace SistemasDeBancas.Consulta
 
         private void Buscarbutton_Click(object sender, EventArgs e)
         {
-            
+            this.DatosDataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            this.DatosDataGridView.MultiSelect = false;
+
             if (CamposComboBox.SelectedItem.ToString() == "UsuarioID")
             {
                 if (!String.IsNullOrEmpty(FiltroTextBox.Text))
@@ -114,6 +116,7 @@ namespace SistemasDeBancas.Consulta
                 mu.UsuarioIDTextBox.Text = DatosDataGridView.SelectedRows[0].Cells[0].Value.ToString();
                 mu.NombreTextBox.Text = DatosDataGridView.SelectedRows[0].Cells[1].Value.ToString();
                 mu.ClaveTextBox.Text = DatosDataGridView.SelectedRows[0].Cells[2].Value.ToString();
+                mu.ConfirmarTextBox.Text = DatosDataGridView.SelectedRows[0].Cells[2].Value.ToString();
                 mu.PerfilComboBox.Text = DatosDataGridView.SelectedRows[0].Cells[3].Value.ToString();
 
                
