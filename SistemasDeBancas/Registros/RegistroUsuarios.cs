@@ -49,9 +49,18 @@ namespace SistemasDeBancas
             usuario.Tipo = PerfilComboBox.SelectedItem.ToString();
             usuario.Nombre = NombreTextBox.Text;
             usuario.Clave = ClaveTextBox.Text;
+            usuario.Fecha = FechadateTimePicker.Value;
            
             if (UsuariosBLL.Guardar(usuario))
-                   MessageBox.Show("Guardado.....");
+            {
+                MessageBox.Show("Guardado.....");
+                NombreTextBox.Clear();
+                ClaveTextBox.Clear();
+                ConfirmarTextBox.Clear();
+                PerfilComboBox.Text = "";
+            }
+                  
+
                 else
                     MessageBox.Show("Error al guardar");
 
@@ -120,6 +129,11 @@ namespace SistemasDeBancas
         }
 
         private void PerfilComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UsuarioIDTextBox_TextChanged(object sender, EventArgs e)
         {
 
         }

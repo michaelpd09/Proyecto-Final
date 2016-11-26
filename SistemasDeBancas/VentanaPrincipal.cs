@@ -57,8 +57,7 @@ namespace SistemasDeBancas
         private void AbrirVentas_Click(object sender, EventArgs e)
         {
 
-            Login login = new Login();
-            login.Show();
+           
             
         }
 
@@ -71,6 +70,73 @@ namespace SistemasDeBancas
         {
             RegistroUsuarios rg = new RegistroUsuarios();
             rg.Visible = true;
+        }
+
+        private void Nuevobutton_Click(object sender, EventArgs e)
+        {
+            
+
+            
+        }
+
+        private void SalirButton_Click_1(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void UsuarioButton_Click_1(object sender, EventArgs e)
+        {
+            
+            RegistroUsuarios rg = new RegistroUsuarios();
+            rg.Visible = true;
+        }
+
+        private void Nuevobutton_Click_1(object sender, EventArgs e)
+        {
+            Monto.Clear();
+            Numero.Clear();
+            LoteriasComboBox.SelectedItem = 0;
+            Total.Clear();
+            TotalPale.Clear();
+            TotalQuiniela.Clear();
+            TotalTripleta.Clear();
+            Quiniela.Clear();
+            Pale.Clear();
+            Tripleta.Clear();
+        }
+
+        private void Agregarbutton_Click(object sender, EventArgs e)
+        {
+
+            if ((Numero.Text).Length >= 0 && (Numero.Text).Length < 3)
+            {
+                Quiniela.Items.Add(Monto.Text +"   " + Numero.Text );
+                              
+            }
+            else
+            if ((Numero.Text).Length >= 3 && (Numero.Text).Length < 5)
+            {
+                Pale.Items.Add(Monto.Text,3);
+                Pale.Items.Add(Numero.Text,3);
+
+            }
+            else
+            if ((Numero.Text).Length >= 5 && (Numero.Text).Length < 7)
+            {
+                Tripleta.Items.Add(Monto.Text,3);
+                Tripleta.Items.Add(Numero.Text,3);
+            }
+            else
+                MessageBox.Show("Error en el formato");
+
+
+            
+
+        }
+
+        private int Length(string text)
+        {
+            throw new NotImplementedException();
         }
     }
 }

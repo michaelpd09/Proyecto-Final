@@ -48,7 +48,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LoteriaBLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TicketBLL.cs" />
     <Compile Include="UsuariosBLL.cs" />
   </ItemGroup>
   <ItemGroup>

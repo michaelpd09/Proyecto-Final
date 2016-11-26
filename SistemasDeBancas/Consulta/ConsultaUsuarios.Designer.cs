@@ -62,7 +62,7 @@
             this.FiltroTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FiltroTextBox.Location = new System.Drawing.Point(211, 31);
             this.FiltroTextBox.Name = "FiltroTextBox";
-            this.FiltroTextBox.Size = new System.Drawing.Size(142, 26);
+            this.FiltroTextBox.Size = new System.Drawing.Size(246, 26);
             this.FiltroTextBox.TabIndex = 62;
             // 
             // label1
@@ -81,7 +81,7 @@
             this.DatosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DatosDataGridView.Location = new System.Drawing.Point(12, 63);
             this.DatosDataGridView.Name = "DatosDataGridView";
-            this.DatosDataGridView.Size = new System.Drawing.Size(482, 215);
+            this.DatosDataGridView.Size = new System.Drawing.Size(585, 245);
             this.DatosDataGridView.TabIndex = 60;
             this.DatosDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DatosDataGridView_CellContentClick);
             // 
@@ -91,7 +91,7 @@
             this.SalirButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.SalirButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SalirButton.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.SalirButton.Location = new System.Drawing.Point(378, 284);
+            this.SalirButton.Location = new System.Drawing.Point(481, 314);
             this.SalirButton.Name = "SalirButton";
             this.SalirButton.Size = new System.Drawing.Size(116, 52);
             this.SalirButton.TabIndex = 68;
@@ -107,7 +107,7 @@
             this.EliminarButton.Enabled = false;
             this.EliminarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EliminarButton.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.EliminarButton.Location = new System.Drawing.Point(256, 284);
+            this.EliminarButton.Location = new System.Drawing.Point(329, 314);
             this.EliminarButton.Name = "EliminarButton";
             this.EliminarButton.Size = new System.Drawing.Size(116, 52);
             this.EliminarButton.TabIndex = 67;
@@ -123,7 +123,7 @@
             this.EditarButton.Enabled = false;
             this.EditarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EditarButton.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.EditarButton.Location = new System.Drawing.Point(134, 284);
+            this.EditarButton.Location = new System.Drawing.Point(173, 314);
             this.EditarButton.Name = "EditarButton";
             this.EditarButton.Size = new System.Drawing.Size(116, 52);
             this.EditarButton.TabIndex = 66;
@@ -138,7 +138,7 @@
             this.NuevoButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.NuevoButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NuevoButton.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.NuevoButton.Location = new System.Drawing.Point(12, 284);
+            this.NuevoButton.Location = new System.Drawing.Point(12, 314);
             this.NuevoButton.Name = "NuevoButton";
             this.NuevoButton.Size = new System.Drawing.Size(116, 52);
             this.NuevoButton.TabIndex = 65;
@@ -154,7 +154,7 @@
             this.Buscarbutton.ForeColor = System.Drawing.Color.DodgerBlue;
             this.Buscarbutton.Image = global::SistemasDeBancas.Properties.Resources.Search_icon;
             this.Buscarbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Buscarbutton.Location = new System.Drawing.Point(360, 6);
+            this.Buscarbutton.Location = new System.Drawing.Point(462, 6);
             this.Buscarbutton.Margin = new System.Windows.Forms.Padding(2);
             this.Buscarbutton.Name = "Buscarbutton";
             this.Buscarbutton.Size = new System.Drawing.Size(135, 52);
@@ -168,16 +168,16 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(506, 358);
-            this.Controls.Add(this.SalirButton);
-            this.Controls.Add(this.EliminarButton);
-            this.Controls.Add(this.EditarButton);
-            this.Controls.Add(this.NuevoButton);
+            this.ClientSize = new System.Drawing.Size(601, 421);
             this.Controls.Add(this.CamposComboBox);
             this.Controls.Add(this.FiltroTextBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Buscarbutton);
             this.Controls.Add(this.DatosDataGridView);
+            this.Controls.Add(this.SalirButton);
+            this.Controls.Add(this.EliminarButton);
+            this.Controls.Add(this.EditarButton);
+            this.Controls.Add(this.NuevoButton);
             this.Name = "ConsultaUsuarios";
             this.Text = "ConsultaUsuarios";
             this.Load += new System.EventHandler(this.ConsultaUsuarios_Load);

@@ -29,15 +29,29 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VentanaPrincipal));
-            this.label1 = new System.Windows.Forms.Label();
-            this.NumeroTicket = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.Monto = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.Numero = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.VentagroupBox = new System.Windows.Forms.GroupBox();
+            this.Total = new System.Windows.Forms.TextBox();
+            this.LoteriasComboBox = new System.Windows.Forms.ComboBox();
+            this.Numero = new System.Windows.Forms.TextBox();
+            this.Monto = new System.Windows.Forms.TextBox();
+            this.NumeroTicket = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.NumerogroupBox = new System.Windows.Forms.GroupBox();
+            this.UsuarioSistema = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.TotalTripleta = new System.Windows.Forms.TextBox();
+            this.TotalPale = new System.Windows.Forms.TextBox();
+            this.TotalQuiniela = new System.Windows.Forms.TextBox();
+            this.Tripleta = new System.Windows.Forms.ListView();
+            this.Pale = new System.Windows.Forms.ListView();
+            this.Quiniela = new System.Windows.Forms.ListView();
             this.GuardarButton = new System.Windows.Forms.Button();
             this.AnularButton = new System.Windows.Forms.Button();
             this.Nuevobutton = new System.Windows.Forms.Button();
@@ -46,79 +60,12 @@
             this.SalirButton = new System.Windows.Forms.Button();
             this.UsuarioButton = new System.Windows.Forms.Button();
             this.ReporteButton = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.LoteriasComboBox = new System.Windows.Forms.ComboBox();
-            this.Total = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.Quiniela = new System.Windows.Forms.ListView();
-            this.Pale = new System.Windows.Forms.ListView();
-            this.Tripleta = new System.Windows.Forms.ListView();
-            this.TotalQuiniela = new System.Windows.Forms.TextBox();
-            this.TotalPale = new System.Windows.Forms.TextBox();
-            this.TotalTripleta = new System.Windows.Forms.TextBox();
+            this.Agregarbutton = new System.Windows.Forms.Button();
+            this.OpcionesgroupBox = new System.Windows.Forms.GroupBox();
+            this.VentagroupBox.SuspendLayout();
+            this.NumerogroupBox.SuspendLayout();
+            this.OpcionesgroupBox.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label1.Location = new System.Drawing.Point(13, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 20);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Ticket:";
-            // 
-            // NumeroTicket
-            // 
-            this.NumeroTicket.AccessibleName = "";
-            this.NumeroTicket.Enabled = false;
-            this.NumeroTicket.Location = new System.Drawing.Point(70, 15);
-            this.NumeroTicket.Name = "NumeroTicket";
-            this.NumeroTicket.ReadOnly = true;
-            this.NumeroTicket.Size = new System.Drawing.Size(100, 20);
-            this.NumeroTicket.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label2.Location = new System.Drawing.Point(14, 48);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 20);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Monto";
-            // 
-            // Monto
-            // 
-            this.Monto.AccessibleName = "";
-            this.Monto.Location = new System.Drawing.Point(70, 50);
-            this.Monto.Name = "Monto";
-            this.Monto.Size = new System.Drawing.Size(100, 20);
-            this.Monto.TabIndex = 3;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label3.Location = new System.Drawing.Point(176, 50);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 20);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Numero";
-            // 
-            // Numero
-            // 
-            this.Numero.AccessibleName = "";
-            this.Numero.Location = new System.Drawing.Point(240, 52);
-            this.Numero.Name = "Numero";
-            this.Numero.Size = new System.Drawing.Size(121, 20);
-            this.Numero.TabIndex = 5;
             // 
             // label4
             // 
@@ -156,6 +103,260 @@
             this.label6.TabIndex = 11;
             this.label6.Text = "Tripleta";
             // 
+            // VentagroupBox
+            // 
+            this.VentagroupBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("VentagroupBox.BackgroundImage")));
+            this.VentagroupBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.VentagroupBox.Controls.Add(this.Total);
+            this.VentagroupBox.Controls.Add(this.LoteriasComboBox);
+            this.VentagroupBox.Controls.Add(this.Numero);
+            this.VentagroupBox.Controls.Add(this.Monto);
+            this.VentagroupBox.Controls.Add(this.NumeroTicket);
+            this.VentagroupBox.Controls.Add(this.label8);
+            this.VentagroupBox.Controls.Add(this.label7);
+            this.VentagroupBox.Controls.Add(this.label3);
+            this.VentagroupBox.Controls.Add(this.label2);
+            this.VentagroupBox.Controls.Add(this.label1);
+            this.VentagroupBox.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.VentagroupBox.Location = new System.Drawing.Point(18, 13);
+            this.VentagroupBox.Name = "VentagroupBox";
+            this.VentagroupBox.Size = new System.Drawing.Size(567, 111);
+            this.VentagroupBox.TabIndex = 32;
+            this.VentagroupBox.TabStop = false;
+            this.VentagroupBox.Text = "Venta";
+            // 
+            // Total
+            // 
+            this.Total.AccessibleName = "";
+            this.Total.BackColor = System.Drawing.Color.White;
+            this.Total.Enabled = false;
+            this.Total.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Total.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.Total.Location = new System.Drawing.Point(405, 25);
+            this.Total.Name = "Total";
+            this.Total.ReadOnly = true;
+            this.Total.Size = new System.Drawing.Size(140, 38);
+            this.Total.TabIndex = 40;
+            // 
+            // LoteriasComboBox
+            // 
+            this.LoteriasComboBox.AccessibleName = "";
+            this.LoteriasComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LoteriasComboBox.FormattingEnabled = true;
+            this.LoteriasComboBox.Location = new System.Drawing.Point(243, 22);
+            this.LoteriasComboBox.Name = "LoteriasComboBox";
+            this.LoteriasComboBox.Size = new System.Drawing.Size(100, 39);
+            this.LoteriasComboBox.TabIndex = 39;
+            // 
+            // Numero
+            // 
+            this.Numero.AccessibleName = "";
+            this.Numero.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Numero.Location = new System.Drawing.Point(243, 66);
+            this.Numero.Name = "Numero";
+            this.Numero.Size = new System.Drawing.Size(100, 38);
+            this.Numero.TabIndex = 37;
+            // 
+            // Monto
+            // 
+            this.Monto.AccessibleName = "";
+            this.Monto.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Monto.Location = new System.Drawing.Point(61, 66);
+            this.Monto.Name = "Monto";
+            this.Monto.Size = new System.Drawing.Size(100, 38);
+            this.Monto.TabIndex = 35;
+            // 
+            // NumeroTicket
+            // 
+            this.NumeroTicket.AccessibleName = "";
+            this.NumeroTicket.Enabled = false;
+            this.NumeroTicket.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NumeroTicket.Location = new System.Drawing.Point(61, 22);
+            this.NumeroTicket.Name = "NumeroTicket";
+            this.NumeroTicket.ReadOnly = true;
+            this.NumeroTicket.Size = new System.Drawing.Size(100, 38);
+            this.NumeroTicket.TabIndex = 33;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label8.Location = new System.Drawing.Point(349, 28);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(44, 20);
+            this.label8.TabIndex = 42;
+            this.label8.Text = "Total";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label7.Location = new System.Drawing.Point(179, 28);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(58, 20);
+            this.label7.TabIndex = 38;
+            this.label7.Text = "Loteria";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label3.Location = new System.Drawing.Point(179, 69);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(65, 20);
+            this.label3.TabIndex = 36;
+            this.label3.Text = "Numero";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label2.Location = new System.Drawing.Point(5, 69);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(54, 20);
+            this.label2.TabIndex = 34;
+            this.label2.Text = "Monto";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label1.Location = new System.Drawing.Point(4, 28);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(55, 20);
+            this.label1.TabIndex = 32;
+            this.label1.Text = "Ticket:";
+            // 
+            // NumerogroupBox
+            // 
+            this.NumerogroupBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("NumerogroupBox.BackgroundImage")));
+            this.NumerogroupBox.Controls.Add(this.UsuarioSistema);
+            this.NumerogroupBox.Controls.Add(this.label9);
+            this.NumerogroupBox.Controls.Add(this.TotalTripleta);
+            this.NumerogroupBox.Controls.Add(this.TotalPale);
+            this.NumerogroupBox.Controls.Add(this.TotalQuiniela);
+            this.NumerogroupBox.Controls.Add(this.Tripleta);
+            this.NumerogroupBox.Controls.Add(this.Pale);
+            this.NumerogroupBox.Controls.Add(this.Quiniela);
+            this.NumerogroupBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.NumerogroupBox.Location = new System.Drawing.Point(18, 130);
+            this.NumerogroupBox.Name = "NumerogroupBox";
+            this.NumerogroupBox.Size = new System.Drawing.Size(567, 397);
+            this.NumerogroupBox.TabIndex = 33;
+            this.NumerogroupBox.TabStop = false;
+            this.NumerogroupBox.Text = "Numeros";
+            // 
+            // UsuarioSistema
+            // 
+            this.UsuarioSistema.AutoSize = true;
+            this.UsuarioSistema.BackColor = System.Drawing.Color.Transparent;
+            this.UsuarioSistema.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UsuarioSistema.Location = new System.Drawing.Point(110, 375);
+            this.UsuarioSistema.Name = "UsuarioSistema";
+            this.UsuarioSistema.Size = new System.Drawing.Size(0, 20);
+            this.UsuarioSistema.TabIndex = 33;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label9.Location = new System.Drawing.Point(25, 373);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(79, 24);
+            this.label9.TabIndex = 32;
+            this.label9.Text = "Usuario:";
+            // 
+            // TotalTripleta
+            // 
+            this.TotalTripleta.AccessibleName = "";
+            this.TotalTripleta.BackColor = System.Drawing.Color.DodgerBlue;
+            this.TotalTripleta.Enabled = false;
+            this.TotalTripleta.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalTripleta.ForeColor = System.Drawing.Color.White;
+            this.TotalTripleta.Location = new System.Drawing.Point(371, 319);
+            this.TotalTripleta.Name = "TotalTripleta";
+            this.TotalTripleta.ReadOnly = true;
+            this.TotalTripleta.Size = new System.Drawing.Size(174, 44);
+            this.TotalTripleta.TabIndex = 31;
+            // 
+            // TotalPale
+            // 
+            this.TotalPale.AccessibleName = "";
+            this.TotalPale.BackColor = System.Drawing.Color.DodgerBlue;
+            this.TotalPale.Enabled = false;
+            this.TotalPale.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalPale.ForeColor = System.Drawing.Color.White;
+            this.TotalPale.Location = new System.Drawing.Point(191, 319);
+            this.TotalPale.Name = "TotalPale";
+            this.TotalPale.ReadOnly = true;
+            this.TotalPale.Size = new System.Drawing.Size(174, 44);
+            this.TotalPale.TabIndex = 30;
+            // 
+            // TotalQuiniela
+            // 
+            this.TotalQuiniela.AccessibleName = "";
+            this.TotalQuiniela.BackColor = System.Drawing.Color.DodgerBlue;
+            this.TotalQuiniela.Enabled = false;
+            this.TotalQuiniela.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalQuiniela.ForeColor = System.Drawing.Color.White;
+            this.TotalQuiniela.Location = new System.Drawing.Point(11, 319);
+            this.TotalQuiniela.Name = "TotalQuiniela";
+            this.TotalQuiniela.ReadOnly = true;
+            this.TotalQuiniela.Size = new System.Drawing.Size(175, 44);
+            this.TotalQuiniela.TabIndex = 29;
+            // 
+            // Tripleta
+            // 
+            this.Tripleta.AccessibleName = "";
+            this.Tripleta.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Tripleta.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.Tripleta.Location = new System.Drawing.Point(371, 19);
+            this.Tripleta.Margin = new System.Windows.Forms.Padding(1);
+            this.Tripleta.Name = "Tripleta";
+            this.Tripleta.Size = new System.Drawing.Size(174, 295);
+            this.Tripleta.TabIndex = 10;
+            this.Tripleta.UseCompatibleStateImageBehavior = false;
+            // 
+            // Pale
+            // 
+            this.Pale.AccessibleName = "";
+            this.Pale.BackColor = System.Drawing.Color.White;
+            this.Pale.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Pale.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.Pale.Location = new System.Drawing.Point(191, 19);
+            this.Pale.Margin = new System.Windows.Forms.Padding(1);
+            this.Pale.Name = "Pale";
+            this.Pale.Size = new System.Drawing.Size(174, 295);
+            this.Pale.TabIndex = 27;
+            this.Pale.UseCompatibleStateImageBehavior = false;
+            // 
+            // Quiniela
+            // 
+            this.Quiniela.AccessibleName = "";
+            this.Quiniela.BackColor = System.Drawing.Color.White;
+            this.Quiniela.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Quiniela.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.Quiniela.FullRowSelect = true;
+            this.Quiniela.GridLines = true;
+            this.Quiniela.Location = new System.Drawing.Point(11, 19);
+            this.Quiniela.Margin = new System.Windows.Forms.Padding(1);
+            this.Quiniela.Name = "Quiniela";
+            this.Quiniela.Size = new System.Drawing.Size(175, 295);
+            this.Quiniela.TabIndex = 26;
+            this.Quiniela.UseCompatibleStateImageBehavior = false;
+            // 
             // GuardarButton
             // 
             this.GuardarButton.AccessibleName = "";
@@ -165,14 +366,13 @@
             this.GuardarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GuardarButton.ForeColor = System.Drawing.Color.DodgerBlue;
             this.GuardarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.GuardarButton.Location = new System.Drawing.Point(632, 104);
+            this.GuardarButton.Location = new System.Drawing.Point(29, 121);
             this.GuardarButton.Name = "GuardarButton";
             this.GuardarButton.Size = new System.Drawing.Size(136, 48);
-            this.GuardarButton.TabIndex = 12;
+            this.GuardarButton.TabIndex = 21;
             this.GuardarButton.Text = "Guardar";
             this.GuardarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.GuardarButton.UseVisualStyleBackColor = false;
-            this.GuardarButton.Click += new System.EventHandler(this.GuardarButton_Click);
             // 
             // AnularButton
             // 
@@ -183,10 +383,10 @@
             this.AnularButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AnularButton.ForeColor = System.Drawing.Color.DodgerBlue;
             this.AnularButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.AnularButton.Location = new System.Drawing.Point(632, 272);
+            this.AnularButton.Location = new System.Drawing.Point(29, 286);
             this.AnularButton.Name = "AnularButton";
             this.AnularButton.Size = new System.Drawing.Size(136, 48);
-            this.AnularButton.TabIndex = 13;
+            this.AnularButton.TabIndex = 22;
             this.AnularButton.Text = "Anular";
             this.AnularButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.AnularButton.UseVisualStyleBackColor = false;
@@ -200,13 +400,14 @@
             this.Nuevobutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Nuevobutton.ForeColor = System.Drawing.Color.DodgerBlue;
             this.Nuevobutton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Nuevobutton.Location = new System.Drawing.Point(632, 160);
+            this.Nuevobutton.Location = new System.Drawing.Point(29, 176);
             this.Nuevobutton.Name = "Nuevobutton";
             this.Nuevobutton.Size = new System.Drawing.Size(136, 48);
-            this.Nuevobutton.TabIndex = 14;
+            this.Nuevobutton.TabIndex = 23;
             this.Nuevobutton.Text = "Nuevo";
             this.Nuevobutton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Nuevobutton.UseVisualStyleBackColor = false;
+            this.Nuevobutton.Click += new System.EventHandler(this.Nuevobutton_Click_1);
             // 
             // ReimprimirButton
             // 
@@ -217,10 +418,10 @@
             this.ReimprimirButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ReimprimirButton.ForeColor = System.Drawing.Color.DodgerBlue;
             this.ReimprimirButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.ReimprimirButton.Location = new System.Drawing.Point(632, 216);
+            this.ReimprimirButton.Location = new System.Drawing.Point(29, 231);
             this.ReimprimirButton.Name = "ReimprimirButton";
             this.ReimprimirButton.Size = new System.Drawing.Size(136, 48);
-            this.ReimprimirButton.TabIndex = 15;
+            this.ReimprimirButton.TabIndex = 24;
             this.ReimprimirButton.Text = "Reimprimir";
             this.ReimprimirButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.ReimprimirButton.UseVisualStyleBackColor = false;
@@ -230,11 +431,12 @@
             this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.CalendarTitleForeColor = System.Drawing.Color.DodgerBlue;
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Time;
-            this.dateTimePicker1.Location = new System.Drawing.Point(632, 35);
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker1.Location = new System.Drawing.Point(29, 22);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(136, 26);
             this.dateTimePicker1.TabIndex = 16;
+            this.dateTimePicker1.TabStop = false;
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // SalirButton
@@ -245,14 +447,14 @@
             this.SalirButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SalirButton.ForeColor = System.Drawing.Color.DodgerBlue;
             this.SalirButton.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.SalirButton.Location = new System.Drawing.Point(632, 440);
+            this.SalirButton.Location = new System.Drawing.Point(29, 451);
             this.SalirButton.Name = "SalirButton";
             this.SalirButton.Size = new System.Drawing.Size(136, 48);
-            this.SalirButton.TabIndex = 17;
+            this.SalirButton.TabIndex = 25;
             this.SalirButton.Text = "Salir";
             this.SalirButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.SalirButton.UseVisualStyleBackColor = false;
-            this.SalirButton.Click += new System.EventHandler(this.Salirbutton_Click);
+            this.SalirButton.Click += new System.EventHandler(this.SalirButton_Click_1);
             // 
             // UsuarioButton
             // 
@@ -263,14 +465,14 @@
             this.UsuarioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UsuarioButton.ForeColor = System.Drawing.Color.DodgerBlue;
             this.UsuarioButton.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.UsuarioButton.Location = new System.Drawing.Point(632, 384);
+            this.UsuarioButton.Location = new System.Drawing.Point(29, 396);
             this.UsuarioButton.Name = "UsuarioButton";
             this.UsuarioButton.Size = new System.Drawing.Size(136, 48);
-            this.UsuarioButton.TabIndex = 19;
+            this.UsuarioButton.TabIndex = 26;
             this.UsuarioButton.Text = "Usuarios";
             this.UsuarioButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.UsuarioButton.UseVisualStyleBackColor = false;
-            this.UsuarioButton.Click += new System.EventHandler(this.UsuarioButton_Click);
+            this.UsuarioButton.Click += new System.EventHandler(this.UsuarioButton_Click_1);
             // 
             // ReporteButton
             // 
@@ -281,132 +483,53 @@
             this.ReporteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ReporteButton.ForeColor = System.Drawing.Color.DodgerBlue;
             this.ReporteButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.ReporteButton.Location = new System.Drawing.Point(632, 328);
+            this.ReporteButton.Location = new System.Drawing.Point(29, 341);
             this.ReporteButton.Name = "ReporteButton";
             this.ReporteButton.Size = new System.Drawing.Size(136, 48);
-            this.ReporteButton.TabIndex = 20;
+            this.ReporteButton.TabIndex = 27;
             this.ReporteButton.Text = "Reporte";
             this.ReporteButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.ReporteButton.UseVisualStyleBackColor = false;
             // 
-            // label7
+            // Agregarbutton
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label7.Location = new System.Drawing.Point(176, 13);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(58, 20);
-            this.label7.TabIndex = 21;
-            this.label7.Text = "Loteria";
+            this.Agregarbutton.AccessibleName = "";
+            this.Agregarbutton.BackColor = System.Drawing.Color.Transparent;
+            this.Agregarbutton.BackgroundImage = global::SistemasDeBancas.Properties.Resources.img;
+            this.Agregarbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Agregarbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Agregarbutton.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.Agregarbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Agregarbutton.Location = new System.Drawing.Point(29, 66);
+            this.Agregarbutton.Name = "Agregarbutton";
+            this.Agregarbutton.Size = new System.Drawing.Size(136, 48);
+            this.Agregarbutton.TabIndex = 28;
+            this.Agregarbutton.Text = "Agregar";
+            this.Agregarbutton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Agregarbutton.UseVisualStyleBackColor = false;
+            this.Agregarbutton.Click += new System.EventHandler(this.Agregarbutton_Click);
             // 
-            // LoteriasComboBox
+            // OpcionesgroupBox
             // 
-            this.LoteriasComboBox.AccessibleName = "";
-            this.LoteriasComboBox.FormattingEnabled = true;
-            this.LoteriasComboBox.Location = new System.Drawing.Point(240, 17);
-            this.LoteriasComboBox.Name = "LoteriasComboBox";
-            this.LoteriasComboBox.Size = new System.Drawing.Size(121, 21);
-            this.LoteriasComboBox.TabIndex = 22;
-            // 
-            // Total
-            // 
-            this.Total.AccessibleName = "";
-            this.Total.BackColor = System.Drawing.Color.White;
-            this.Total.Enabled = false;
-            this.Total.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Total.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.Total.Location = new System.Drawing.Point(378, 24);
-            this.Total.Name = "Total";
-            this.Total.ReadOnly = true;
-            this.Total.Size = new System.Drawing.Size(174, 44);
-            this.Total.TabIndex = 26;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label8.Location = new System.Drawing.Point(433, 1);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(44, 20);
-            this.label8.TabIndex = 27;
-            this.label8.Text = "Total";
-            // 
-            // Quiniela
-            // 
-            this.Quiniela.AccessibleName = "";
-            this.Quiniela.BackColor = System.Drawing.Color.White;
-            this.Quiniela.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.Quiniela.Location = new System.Drawing.Point(18, 128);
-            this.Quiniela.Name = "Quiniela";
-            this.Quiniela.Size = new System.Drawing.Size(175, 295);
-            this.Quiniela.TabIndex = 6;
-            this.Quiniela.UseCompatibleStateImageBehavior = false;
-            // 
-            // Pale
-            // 
-            this.Pale.AccessibleName = "";
-            this.Pale.BackColor = System.Drawing.Color.White;
-            this.Pale.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.Pale.Location = new System.Drawing.Point(198, 128);
-            this.Pale.Name = "Pale";
-            this.Pale.Size = new System.Drawing.Size(174, 295);
-            this.Pale.TabIndex = 7;
-            this.Pale.UseCompatibleStateImageBehavior = false;
-            // 
-            // Tripleta
-            // 
-            this.Tripleta.AccessibleName = "";
-            this.Tripleta.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.Tripleta.Location = new System.Drawing.Point(378, 128);
-            this.Tripleta.Name = "Tripleta";
-            this.Tripleta.Size = new System.Drawing.Size(174, 295);
-            this.Tripleta.TabIndex = 8;
-            this.Tripleta.UseCompatibleStateImageBehavior = false;
-            this.Tripleta.SelectedIndexChanged += new System.EventHandler(this.Tripleta_SelectedIndexChanged);
-            // 
-            // TotalQuiniela
-            // 
-            this.TotalQuiniela.AccessibleName = "";
-            this.TotalQuiniela.BackColor = System.Drawing.Color.DodgerBlue;
-            this.TotalQuiniela.Enabled = false;
-            this.TotalQuiniela.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalQuiniela.ForeColor = System.Drawing.Color.White;
-            this.TotalQuiniela.Location = new System.Drawing.Point(18, 428);
-            this.TotalQuiniela.Name = "TotalQuiniela";
-            this.TotalQuiniela.ReadOnly = true;
-            this.TotalQuiniela.Size = new System.Drawing.Size(175, 44);
-            this.TotalQuiniela.TabIndex = 23;
-            this.TotalQuiniela.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // TotalPale
-            // 
-            this.TotalPale.AccessibleName = "";
-            this.TotalPale.BackColor = System.Drawing.Color.DodgerBlue;
-            this.TotalPale.Enabled = false;
-            this.TotalPale.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalPale.ForeColor = System.Drawing.Color.White;
-            this.TotalPale.Location = new System.Drawing.Point(198, 428);
-            this.TotalPale.Name = "TotalPale";
-            this.TotalPale.ReadOnly = true;
-            this.TotalPale.Size = new System.Drawing.Size(174, 44);
-            this.TotalPale.TabIndex = 24;
-            // 
-            // TotalTripleta
-            // 
-            this.TotalTripleta.AccessibleName = "";
-            this.TotalTripleta.BackColor = System.Drawing.Color.DodgerBlue;
-            this.TotalTripleta.Enabled = false;
-            this.TotalTripleta.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalTripleta.ForeColor = System.Drawing.Color.White;
-            this.TotalTripleta.Location = new System.Drawing.Point(378, 428);
-            this.TotalTripleta.Name = "TotalTripleta";
-            this.TotalTripleta.ReadOnly = true;
-            this.TotalTripleta.Size = new System.Drawing.Size(174, 44);
-            this.TotalTripleta.TabIndex = 25;
+            this.OpcionesgroupBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("OpcionesgroupBox.BackgroundImage")));
+            this.OpcionesgroupBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.OpcionesgroupBox.Controls.Add(this.Agregarbutton);
+            this.OpcionesgroupBox.Controls.Add(this.ReporteButton);
+            this.OpcionesgroupBox.Controls.Add(this.UsuarioButton);
+            this.OpcionesgroupBox.Controls.Add(this.SalirButton);
+            this.OpcionesgroupBox.Controls.Add(this.dateTimePicker1);
+            this.OpcionesgroupBox.Controls.Add(this.ReimprimirButton);
+            this.OpcionesgroupBox.Controls.Add(this.Nuevobutton);
+            this.OpcionesgroupBox.Controls.Add(this.AnularButton);
+            this.OpcionesgroupBox.Controls.Add(this.GuardarButton);
+            this.OpcionesgroupBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OpcionesgroupBox.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.OpcionesgroupBox.Location = new System.Drawing.Point(617, 13);
+            this.OpcionesgroupBox.Name = "OpcionesgroupBox";
+            this.OpcionesgroupBox.Size = new System.Drawing.Size(200, 512);
+            this.OpcionesgroupBox.TabIndex = 34;
+            this.OpcionesgroupBox.TabStop = false;
+            this.OpcionesgroupBox.Text = "Opciones";
             // 
             // VentanaPrincipal
             // 
@@ -415,71 +538,60 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(798, 512);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.Total);
-            this.Controls.Add(this.TotalTripleta);
-            this.Controls.Add(this.TotalPale);
-            this.Controls.Add(this.TotalQuiniela);
-            this.Controls.Add(this.LoteriasComboBox);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.ReporteButton);
-            this.Controls.Add(this.UsuarioButton);
-            this.Controls.Add(this.SalirButton);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.ReimprimirButton);
-            this.Controls.Add(this.Nuevobutton);
-            this.Controls.Add(this.AnularButton);
-            this.Controls.Add(this.GuardarButton);
+            this.ClientSize = new System.Drawing.Size(837, 532);
+            this.Controls.Add(this.OpcionesgroupBox);
+            this.Controls.Add(this.NumerogroupBox);
+            this.Controls.Add(this.VentagroupBox);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.Tripleta);
-            this.Controls.Add(this.Pale);
-            this.Controls.Add(this.Quiniela);
-            this.Controls.Add(this.Numero);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.Monto);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.NumeroTicket);
-            this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "VentanaPrincipal";
             this.Text = "Ventas de Loterias";
             this.Load += new System.EventHandler(this.VentanaPrincipal_Load);
+            this.VentagroupBox.ResumeLayout(false);
+            this.VentagroupBox.PerformLayout();
+            this.NumerogroupBox.ResumeLayout(false);
+            this.NumerogroupBox.PerformLayout();
+            this.OpcionesgroupBox.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox NumeroTicket;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Button SalirButton;
+        private System.Windows.Forms.GroupBox VentagroupBox;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        public System.Windows.Forms.TextBox Monto;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.GroupBox NumerogroupBox;
+        private System.Windows.Forms.Label UsuarioSistema;
+        public System.Windows.Forms.TextBox TotalTripleta;
+        public System.Windows.Forms.TextBox TotalPale;
+        public System.Windows.Forms.TextBox TotalQuiniela;
+        public System.Windows.Forms.ListView Tripleta;
+        public System.Windows.Forms.ListView Pale;
+        public System.Windows.Forms.ListView Quiniela;
+        private System.Windows.Forms.Label label9;
+        public System.Windows.Forms.TextBox Total;
+        public System.Windows.Forms.ComboBox LoteriasComboBox;
         public System.Windows.Forms.TextBox Numero;
+        public System.Windows.Forms.TextBox Monto;
+        private System.Windows.Forms.TextBox NumeroTicket;
+        private System.Windows.Forms.Label label8;
+        public System.Windows.Forms.Button GuardarButton;
         public System.Windows.Forms.Button AnularButton;
         public System.Windows.Forms.Button Nuevobutton;
         public System.Windows.Forms.Button ReimprimirButton;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Button SalirButton;
         public System.Windows.Forms.Button UsuarioButton;
         public System.Windows.Forms.Button ReporteButton;
-        public System.Windows.Forms.ComboBox LoteriasComboBox;
-        public System.Windows.Forms.TextBox Total;
-        public System.Windows.Forms.Button GuardarButton;
-        public System.Windows.Forms.ListView Quiniela;
-        public System.Windows.Forms.ListView Pale;
-        public System.Windows.Forms.ListView Tripleta;
-        public System.Windows.Forms.TextBox TotalQuiniela;
-        public System.Windows.Forms.TextBox TotalPale;
-        public System.Windows.Forms.TextBox TotalTripleta;
+        public System.Windows.Forms.Button Agregarbutton;
+        private System.Windows.Forms.GroupBox OpcionesgroupBox;
     }
 }

@@ -50,6 +50,14 @@ namespace BLL
 
         }
 
+        public static void Modificar(Usuarios usuario)
+        {
+            var db = new UsuariosDB();
+            db.Entry(usuario).State = EntityState.Modified;
+            db.SaveChanges();
+            
+        }
+
         public static List <Usuarios> GetLista()
         {
             List<Usuarios> lista = new List<Usuarios>();

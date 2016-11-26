@@ -40,11 +40,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.SalirButton = new System.Windows.Forms.Button();
             this.GuardarButton = new System.Windows.Forms.Button();
+            this.FechadateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // ConfirmarTextBox
             // 
-            this.ConfirmarTextBox.Location = new System.Drawing.Point(119, 132);
+            this.ConfirmarTextBox.Location = new System.Drawing.Point(168, 158);
             this.ConfirmarTextBox.Name = "ConfirmarTextBox";
             this.ConfirmarTextBox.PasswordChar = '*';
             this.ConfirmarTextBox.Size = new System.Drawing.Size(257, 20);
@@ -56,7 +57,7 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label5.Location = new System.Drawing.Point(23, 130);
+            this.label5.Location = new System.Drawing.Point(72, 156);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(82, 20);
             this.label5.TabIndex = 30;
@@ -70,7 +71,7 @@
             "Supervisor",
             "Administrador",
             "Root"});
-            this.PerfilComboBox.Location = new System.Drawing.Point(119, 176);
+            this.PerfilComboBox.Location = new System.Drawing.Point(168, 202);
             this.PerfilComboBox.Name = "PerfilComboBox";
             this.PerfilComboBox.Size = new System.Drawing.Size(257, 21);
             this.PerfilComboBox.TabIndex = 29;
@@ -81,7 +82,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label4.Location = new System.Drawing.Point(22, 174);
+            this.label4.Location = new System.Drawing.Point(71, 200);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(44, 20);
             this.label4.TabIndex = 28;
@@ -89,7 +90,7 @@
             // 
             // ClaveTextBox
             // 
-            this.ClaveTextBox.Location = new System.Drawing.Point(119, 96);
+            this.ClaveTextBox.Location = new System.Drawing.Point(168, 122);
             this.ClaveTextBox.Name = "ClaveTextBox";
             this.ClaveTextBox.PasswordChar = '*';
             this.ClaveTextBox.Size = new System.Drawing.Size(257, 20);
@@ -97,7 +98,7 @@
             // 
             // NombreTextBox
             // 
-            this.NombreTextBox.Location = new System.Drawing.Point(119, 61);
+            this.NombreTextBox.Location = new System.Drawing.Point(168, 87);
             this.NombreTextBox.Name = "NombreTextBox";
             this.NombreTextBox.Size = new System.Drawing.Size(257, 20);
             this.NombreTextBox.TabIndex = 22;
@@ -108,7 +109,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label3.Location = new System.Drawing.Point(22, 96);
+            this.label3.Location = new System.Drawing.Point(71, 122);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(96, 20);
             this.label3.TabIndex = 21;
@@ -119,7 +120,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label2.Location = new System.Drawing.Point(22, 61);
+            this.label2.Location = new System.Drawing.Point(71, 87);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 20);
             this.label2.TabIndex = 20;
@@ -127,10 +128,10 @@
             // 
             // UsuarioIDTextBox
             // 
-            this.UsuarioIDTextBox.Location = new System.Drawing.Point(119, 19);
+            this.UsuarioIDTextBox.Location = new System.Drawing.Point(160, 47);
             this.UsuarioIDTextBox.Name = "UsuarioIDTextBox";
             this.UsuarioIDTextBox.ReadOnly = true;
-            this.UsuarioIDTextBox.Size = new System.Drawing.Size(100, 20);
+            this.UsuarioIDTextBox.Size = new System.Drawing.Size(102, 20);
             this.UsuarioIDTextBox.TabIndex = 19;
             // 
             // label1
@@ -138,7 +139,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label1.Location = new System.Drawing.Point(22, 19);
+            this.label1.Location = new System.Drawing.Point(57, 45);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(97, 20);
             this.label1.TabIndex = 18;
@@ -150,7 +151,7 @@
             this.SalirButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.SalirButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SalirButton.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.SalirButton.Location = new System.Drawing.Point(244, 217);
+            this.SalirButton.Location = new System.Drawing.Point(309, 243);
             this.SalirButton.Name = "SalirButton";
             this.SalirButton.Size = new System.Drawing.Size(116, 52);
             this.SalirButton.TabIndex = 27;
@@ -165,7 +166,7 @@
             this.GuardarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.GuardarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GuardarButton.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.GuardarButton.Location = new System.Drawing.Point(122, 217);
+            this.GuardarButton.Location = new System.Drawing.Point(168, 243);
             this.GuardarButton.Name = "GuardarButton";
             this.GuardarButton.Size = new System.Drawing.Size(116, 52);
             this.GuardarButton.TabIndex = 26;
@@ -174,11 +175,19 @@
             this.GuardarButton.UseVisualStyleBackColor = true;
             this.GuardarButton.Click += new System.EventHandler(this.GuardarButton_Click);
             // 
+            // FechadateTimePicker
+            // 
+            this.FechadateTimePicker.Location = new System.Drawing.Point(298, 12);
+            this.FechadateTimePicker.Name = "FechadateTimePicker";
+            this.FechadateTimePicker.Size = new System.Drawing.Size(195, 20);
+            this.FechadateTimePicker.TabIndex = 32;
+            // 
             // ModificarUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(439, 309);
+            this.ClientSize = new System.Drawing.Size(548, 390);
+            this.Controls.Add(this.FechadateTimePicker);
             this.Controls.Add(this.ConfirmarTextBox);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.PerfilComboBox);
@@ -212,5 +221,6 @@
         public System.Windows.Forms.TextBox ClaveTextBox;
         public System.Windows.Forms.TextBox NombreTextBox;
         public System.Windows.Forms.TextBox UsuarioIDTextBox;
+        public System.Windows.Forms.DateTimePicker FechadateTimePicker;
     }
 }

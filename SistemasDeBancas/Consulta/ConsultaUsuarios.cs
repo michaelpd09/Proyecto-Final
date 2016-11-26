@@ -110,18 +110,16 @@ namespace SistemasDeBancas.Consulta
         {
             if (DatosDataGridView.CurrentRow != null)
             {
-                 Registros.ModificarUsuarios mu = new Registros.ModificarUsuarios();
-                 mu.Show();
-                
+                Registros.ModificarUsuarios mu = new Registros.ModificarUsuarios();
+                mu.Show();
+
                 mu.UsuarioIDTextBox.Text = DatosDataGridView.SelectedRows[0].Cells[0].Value.ToString();
                 mu.NombreTextBox.Text = DatosDataGridView.SelectedRows[0].Cells[1].Value.ToString();
                 mu.ClaveTextBox.Text = DatosDataGridView.SelectedRows[0].Cells[2].Value.ToString();
                 mu.ConfirmarTextBox.Text = DatosDataGridView.SelectedRows[0].Cells[2].Value.ToString();
                 mu.PerfilComboBox.Text = DatosDataGridView.SelectedRows[0].Cells[3].Value.ToString();
-
                
             }
-
             else
             {
                 MessageBox.Show("No hay Usuario para Modificar");
@@ -131,5 +129,9 @@ namespace SistemasDeBancas.Consulta
 
         }
 
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

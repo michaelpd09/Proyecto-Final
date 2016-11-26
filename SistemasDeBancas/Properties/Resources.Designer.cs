@@ -93,6 +93,16 @@ namespace SistemasDeBancas.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dubai_uae_buildings_skyscrapers_night_96720_3840x2160 {
+            get {
+                object obj = ResourceManager.GetObject("dubai_uae_buildings_skyscrapers_night_96720_3840x2160", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap floppy_drive_3_12_icon {
             get {
                 object obj = ResourceManager.GetObject("floppy-drive-3-12-icon", resourceCulture);
