@@ -227,11 +227,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DataBase\BancaDB.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="DataBase\BancaDB_log.ldf">
       <DependentUpon>BancaDB.mdf</DependentUpon>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Resources\dubai_uae_buildings_skyscrapers_night_96720_3840x2160.jpg" />
   </ItemGroup>

@@ -526,11 +526,11 @@
             // 
             this.Hora.AutoSize = true;
             this.Hora.BackColor = System.Drawing.Color.Transparent;
-            this.Hora.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Hora.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Hora.ForeColor = System.Drawing.Color.DodgerBlue;
             this.Hora.Location = new System.Drawing.Point(9, 28);
             this.Hora.Name = "Hora";
-            this.Hora.Size = new System.Drawing.Size(0, 24);
+            this.Hora.Size = new System.Drawing.Size(0, 20);
             this.Hora.TabIndex = 35;
             // 
             // Loteriabutton

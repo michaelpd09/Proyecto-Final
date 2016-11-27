@@ -99,7 +99,7 @@ namespace SistemasDeBancas.Registros
         private void GuardarButton_Click(object sender, EventArgs e)
         {
             var loteria = new Loterias();
-
+            
             loteria.Nombre = NombretextBox.Text;
             loteria.MontoPrimera   = Utilidades.ToInt(MontoPrimeratextBox.Text);
             loteria.MontoTercera   = Utilidades.ToInt(MontoTerceratextBox.Text);

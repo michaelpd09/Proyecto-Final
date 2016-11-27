@@ -62,7 +62,6 @@
             // 
             // IdLoteriatextBox
             // 
-            this.IdLoteriatextBox.Enabled = false;
             this.IdLoteriatextBox.Location = new System.Drawing.Point(134, 28);
             this.IdLoteriatextBox.Name = "IdLoteriatextBox";
             this.IdLoteriatextBox.Size = new System.Drawing.Size(188, 20);
@@ -87,7 +86,6 @@
             // 
             this.GuardarButton.BackgroundImage = global::SistemasDeBancas.Properties.Resources.floppy_drive_3_12_icon;
             this.GuardarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.GuardarButton.Enabled = false;
             this.GuardarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GuardarButton.ForeColor = System.Drawing.Color.DodgerBlue;
             this.GuardarButton.Location = new System.Drawing.Point(206, 265);
@@ -101,7 +99,6 @@
             // 
             // HoraCierredateTimePicker
             // 
-            this.HoraCierredateTimePicker.Enabled = false;
             this.HoraCierredateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.HoraCierredateTimePicker.Location = new System.Drawing.Point(476, 59);
             this.HoraCierredateTimePicker.Name = "HoraCierredateTimePicker";
@@ -110,7 +107,6 @@
             // 
             // HoraApecturadateTimePicker
             // 
-            this.HoraApecturadateTimePicker.Enabled = false;
             this.HoraApecturadateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Time;
             this.HoraApecturadateTimePicker.Location = new System.Drawing.Point(476, 25);
             this.HoraApecturadateTimePicker.Name = "HoraApecturadateTimePicker";
@@ -119,7 +115,6 @@
             // 
             // MaximoTripletatextBox
             // 
-            this.MaximoTripletatextBox.Enabled = false;
             this.MaximoTripletatextBox.Location = new System.Drawing.Point(476, 224);
             this.MaximoTripletatextBox.Name = "MaximoTripletatextBox";
             this.MaximoTripletatextBox.Size = new System.Drawing.Size(188, 20);
@@ -127,7 +122,6 @@
             // 
             // MaximoQuinielatextBox
             // 
-            this.MaximoQuinielatextBox.Enabled = false;
             this.MaximoQuinielatextBox.Location = new System.Drawing.Point(476, 196);
             this.MaximoQuinielatextBox.Name = "MaximoQuinielatextBox";
             this.MaximoQuinielatextBox.Size = new System.Drawing.Size(188, 20);
@@ -135,7 +129,6 @@
             // 
             // MaximoPaletextBox
             // 
-            this.MaximoPaletextBox.Enabled = false;
             this.MaximoPaletextBox.Location = new System.Drawing.Point(134, 223);
             this.MaximoPaletextBox.Name = "MaximoPaletextBox";
             this.MaximoPaletextBox.Size = new System.Drawing.Size(188, 20);
@@ -143,7 +136,6 @@
             // 
             // MontoTripleta1textBox
             // 
-            this.MontoTripleta1textBox.Enabled = false;
             this.MontoTripleta1textBox.Location = new System.Drawing.Point(476, 161);
             this.MontoTripleta1textBox.Name = "MontoTripleta1textBox";
             this.MontoTripleta1textBox.Size = new System.Drawing.Size(188, 20);
@@ -151,7 +143,6 @@
             // 
             // MontoTripleta2textBox
             // 
-            this.MontoTripleta2textBox.Enabled = false;
             this.MontoTripleta2textBox.Location = new System.Drawing.Point(134, 190);
             this.MontoTripleta2textBox.Name = "MontoTripleta2textBox";
             this.MontoTripleta2textBox.Size = new System.Drawing.Size(188, 20);
@@ -159,7 +150,6 @@
             // 
             // MontoPale1textBox
             // 
-            this.MontoPale1textBox.Enabled = false;
             this.MontoPale1textBox.Location = new System.Drawing.Point(476, 127);
             this.MontoPale1textBox.Name = "MontoPale1textBox";
             this.MontoPale1textBox.Size = new System.Drawing.Size(188, 20);
@@ -167,7 +157,6 @@
             // 
             // MontoPale2textBox
             // 
-            this.MontoPale2textBox.Enabled = false;
             this.MontoPale2textBox.Location = new System.Drawing.Point(134, 157);
             this.MontoPale2textBox.Name = "MontoPale2textBox";
             this.MontoPale2textBox.Size = new System.Drawing.Size(188, 20);
@@ -175,7 +164,6 @@
             // 
             // MontoSegundatextBox
             // 
-            this.MontoSegundatextBox.Enabled = false;
             this.MontoSegundatextBox.Location = new System.Drawing.Point(476, 93);
             this.MontoSegundatextBox.Name = "MontoSegundatextBox";
             this.MontoSegundatextBox.Size = new System.Drawing.Size(188, 20);
@@ -183,7 +171,6 @@
             // 
             // MontoTerceratextBox
             // 
-            this.MontoTerceratextBox.Enabled = false;
             this.MontoTerceratextBox.Location = new System.Drawing.Point(134, 124);
             this.MontoTerceratextBox.Name = "MontoTerceratextBox";
             this.MontoTerceratextBox.Size = new System.Drawing.Size(188, 20);
@@ -191,7 +178,6 @@
             // 
             // MontoPrimeratextBox
             // 
-            this.MontoPrimeratextBox.Enabled = false;
             this.MontoPrimeratextBox.Location = new System.Drawing.Point(134, 91);
             this.MontoPrimeratextBox.Name = "MontoPrimeratextBox";
             this.MontoPrimeratextBox.Size = new System.Drawing.Size(188, 20);
@@ -199,7 +185,6 @@
             // 
             // NombretextBox
             // 
-            this.NombretextBox.Enabled = false;
             this.NombretextBox.Location = new System.Drawing.Point(134, 58);
             this.NombretextBox.Name = "NombretextBox";
             this.NombretextBox.Size = new System.Drawing.Size(188, 20);
@@ -416,23 +401,8 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox IdLoteriatextBox;
         private System.Windows.Forms.Button Salirbutton;
         private System.Windows.Forms.Button GuardarButton;
-        private System.Windows.Forms.DateTimePicker HoraCierredateTimePicker;
-        private System.Windows.Forms.DateTimePicker HoraApecturadateTimePicker;
-        private System.Windows.Forms.TextBox MaximoTripletatextBox;
-        private System.Windows.Forms.TextBox MaximoQuinielatextBox;
-        private System.Windows.Forms.TextBox MaximoPaletextBox;
-        private System.Windows.Forms.TextBox MontoTripleta1textBox;
-        private System.Windows.Forms.TextBox MontoTripleta2textBox;
-        private System.Windows.Forms.TextBox MontoPale1textBox;
-        private System.Windows.Forms.TextBox MontoPale2textBox;
-        private System.Windows.Forms.TextBox MontoSegundatextBox;
-        private System.Windows.Forms.TextBox MontoTerceratextBox;
-        private System.Windows.Forms.TextBox MontoPrimeratextBox;
-        private System.Windows.Forms.TextBox NombretextBox;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
@@ -447,5 +417,19 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.TextBox IdLoteriatextBox;
+        public System.Windows.Forms.DateTimePicker HoraCierredateTimePicker;
+        public System.Windows.Forms.DateTimePicker HoraApecturadateTimePicker;
+        public System.Windows.Forms.TextBox MaximoTripletatextBox;
+        public System.Windows.Forms.TextBox MaximoQuinielatextBox;
+        public System.Windows.Forms.TextBox MaximoPaletextBox;
+        public System.Windows.Forms.TextBox MontoTripleta1textBox;
+        public System.Windows.Forms.TextBox MontoTripleta2textBox;
+        public System.Windows.Forms.TextBox MontoPale1textBox;
+        public System.Windows.Forms.TextBox MontoPale2textBox;
+        public System.Windows.Forms.TextBox MontoSegundatextBox;
+        public System.Windows.Forms.TextBox MontoTerceratextBox;
+        public System.Windows.Forms.TextBox MontoPrimeratextBox;
+        public System.Windows.Forms.TextBox NombretextBox;
     }
 }

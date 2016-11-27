@@ -1,5 +1,6 @@
 ﻿using BLL;
 using Entidades;
+using SistemasDeBancas.Modificaciones;
 using SistemasDeBancas.Registros;
 using System;
 using System.Collections.Generic;
@@ -26,7 +27,7 @@ namespace SistemasDeBancas.Consulta
             this.DatosDataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             this.DatosDataGridView.MultiSelect = false;
 
-            if (CamposComboBox.SelectedItem.ToString() == "UsuarioID")
+            if (CamposComboBox.SelectedItem.ToString() == "Id Loteria")
             {
                 if (!String.IsNullOrEmpty(FiltroTextBox.Text))
                     lista = LoteriasBLL.GetListaLoteriaID(Utilidades.ToInt(FiltroTextBox.Text));
@@ -66,8 +67,8 @@ namespace SistemasDeBancas.Consulta
                 DialogResult dialogo = MessageBox.Show("Desea Borrar el Querido Usuario", "Borrarando Usuarios", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (dialogo == DialogResult.Yes)
                 {
-                    int LoteriaID = Convert.ToInt32(DatosDataGridView.CurrentRow.Cells["UsuarioID"].Value);
-                    LoteriasBLL.Eliminar(LoteriaID);
+                    int LoteriaId = Convert.ToInt32(DatosDataGridView.CurrentRow.Cells["IdLoteria"].Value);
+                    LoteriasBLL.Eliminar(LoteriaId);
                     lista = LoteriasBLL.GetLista();
                 }
             }
@@ -77,6 +78,45 @@ namespace SistemasDeBancas.Consulta
 
             }
             DatosDataGridView.DataSource = lista;
+        }
+
+        private void EditarButton_Click(object sender, EventArgs e)
+        {
+            if (DatosDataGridView.CurrentRow != null)
+            {
+                var modificarLoteria = new ModificarLoteria();
+                modificarLoteria.Show();
+                
+                modificarLoteria.IdLoteriatextBox.Text = DatosDataGridView.SelectedRows[0].Cells[0].Value.ToString();
+                modificarLoteria.NombretextBox.Text = DatosDataGridView.SelectedRows[0].Cells[1].Value.ToString();
+                modificarLoteria.MontoPrimeratextBox.Text = DatosDataGridView.SelectedRows[0].Cells[2].Value.ToString();
+                modificarLoteria.MontoSegundatextBox.Text = DatosDataGridView.SelectedRows[0].Cells[3].Value.ToString();
+                modificarLoteria.MontoTerceratextBox.Text = DatosDataGridView.SelectedRows[0].Cells[4].Value.ToString();
+                modificarLoteria.MontoPale1textBox.Text = DatosDataGridView.SelectedRows[0].Cells[5].Value.ToString();
+                modificarLoteria.MontoPale2textBox.Text = DatosDataGridView.SelectedRows[0].Cells[6].Value.ToString();
+                modificarLoteria.MontoTripleta1textBox.Text = DatosDataGridView.SelectedRows[0].Cells[7].Value.ToString();
+                modificarLoteria.MontoTripleta2textBox.Text = DatosDataGridView.SelectedRows[0].Cells[8].Value.ToString();
+                modificarLoteria.HoraApecturadateTimePicker.Text = DatosDataGridView.SelectedRows[0].Cells[9].Value.ToString();
+                modificarLoteria.HoraCierredateTimePicker.Text = DatosDataGridView.SelectedRows[0].Cells[10].Value.ToString();
+                modificarLoteria.MaximoQuinielatextBox.Text = DatosDataGridView.SelectedRows[0].Cells[11].Value.ToString();
+                modificarLoteria.MaximoPaletextBox.Text = DatosDataGridView.SelectedRows[0].Cells[12].Value.ToString();
+                modificarLoteria.MaximoTripletatextBox.Text = DatosDataGridView.SelectedRows[0].Cells[13].Value.ToString();
+            }
+            else
+            {
+                MessageBox.Show("No hay Usuario para Modificar");
+
+            }
+        }
+
+        private void ConsultaLoteria_Load(object sender, EventArgs e)
+        {
+            CamposComboBox.SelectedIndex = 0;
+        }
+
+        private void SalirButton_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

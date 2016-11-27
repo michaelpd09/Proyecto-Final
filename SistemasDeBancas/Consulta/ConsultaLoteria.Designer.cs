@@ -46,7 +46,7 @@
             this.CamposComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CamposComboBox.FormattingEnabled = true;
             this.CamposComboBox.Items.AddRange(new object[] {
-            "UsuarioID",
+            "Id Loteria",
             "Nombre"});
             this.CamposComboBox.Location = new System.Drawing.Point(77, 25);
             this.CamposComboBox.Name = "CamposComboBox";
@@ -113,6 +113,7 @@
             this.SalirButton.Text = "Salir";
             this.SalirButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.SalirButton.UseVisualStyleBackColor = true;
+            this.SalirButton.Click += new System.EventHandler(this.SalirButton_Click);
             // 
             // EliminarButton
             // 
@@ -144,6 +145,7 @@
             this.EditarButton.Text = "Editar";
             this.EditarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.EditarButton.UseVisualStyleBackColor = true;
+            this.EditarButton.Click += new System.EventHandler(this.EditarButton_Click);
             // 
             // NuevoButton
             // 
@@ -176,6 +178,7 @@
             this.Controls.Add(this.NuevoButton);
             this.Name = "ConsultaLoteria";
             this.Text = "ConsultaLoteria";
+            this.Load += new System.EventHandler(this.ConsultaLoteria_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DatosDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

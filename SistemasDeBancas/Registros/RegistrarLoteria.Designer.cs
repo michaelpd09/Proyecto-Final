@@ -467,23 +467,23 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox NombretextBox;
-        private System.Windows.Forms.TextBox MontoTerceratextBox;
-        private System.Windows.Forms.TextBox MontoSegundatextBox;
-        private System.Windows.Forms.TextBox MontoPale2textBox;
-        private System.Windows.Forms.TextBox MontoPale1textBox;
-        private System.Windows.Forms.TextBox MontoTripleta2textBox;
-        private System.Windows.Forms.TextBox MontoTripleta1textBox;
-        private System.Windows.Forms.TextBox MaximoPaletextBox;
-        private System.Windows.Forms.TextBox MaximoQuinielatextBox;
-        private System.Windows.Forms.TextBox MaximoTripletatextBox;
-        private System.Windows.Forms.DateTimePicker HoraApecturadateTimePicker;
-        private System.Windows.Forms.DateTimePicker HoraCierredateTimePicker;
         private System.Windows.Forms.Button GuardarButton;
         private System.Windows.Forms.Button Salirbutton;
         private System.Windows.Forms.Button Nuevobutton;
         private System.Windows.Forms.Button ConsultarLoteriabutton;
-        private System.Windows.Forms.TextBox IdLoteriatextBox;
-        private System.Windows.Forms.TextBox MontoPrimeratextBox;
+        public System.Windows.Forms.TextBox NombretextBox;
+        public System.Windows.Forms.TextBox MontoTerceratextBox;
+        public System.Windows.Forms.TextBox MontoSegundatextBox;
+        public System.Windows.Forms.TextBox MontoPale2textBox;
+        public System.Windows.Forms.TextBox MontoPale1textBox;
+        public System.Windows.Forms.TextBox MontoTripleta2textBox;
+        public System.Windows.Forms.TextBox MontoTripleta1textBox;
+        public System.Windows.Forms.TextBox MaximoPaletextBox;
+        public System.Windows.Forms.TextBox MaximoQuinielatextBox;
+        public System.Windows.Forms.TextBox MaximoTripletatextBox;
+        public System.Windows.Forms.DateTimePicker HoraApecturadateTimePicker;
+        public System.Windows.Forms.DateTimePicker HoraCierredateTimePicker;
+        public System.Windows.Forms.TextBox IdLoteriatextBox;
+        public System.Windows.Forms.TextBox MontoPrimeratextBox;
     }
 }
