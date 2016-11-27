@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Entidades
 {
-    public class Loteria
+    public class Loterias
     {
         [Key]
 

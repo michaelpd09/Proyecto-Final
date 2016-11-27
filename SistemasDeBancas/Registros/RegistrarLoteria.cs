@@ -1,4 +1,6 @@
-﻿using Entidades;
+﻿using BLL;
+using Entidades;
+using SistemasDeBancas.Consulta;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,6 +18,7 @@ namespace SistemasDeBancas.Registros
         {
             InitializeComponent();
         }
+       
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -31,7 +34,10 @@ namespace SistemasDeBancas.Registros
 
         private void Buscarbutton_Click(object sender, EventArgs e)
         {
-            
+            var consultaLoteria = new ConsultaLoteria();
+            consultaLoteria.Visible = true;
+            Close();
+
         }
         private void HabilitarRegistroLoteria()
         {
@@ -53,6 +59,26 @@ namespace SistemasDeBancas.Registros
             
             
         }
+        private void DesabilitarRegistroLoteria()
+        {
+
+            NombretextBox.Enabled         = false;
+            MontoPrimeratextBox.Enabled   = false;
+            MontoTerceratextBox.Enabled   = false;
+            MontoPale2textBox.Enabled     = false;
+            MontoTripleta2textBox.Enabled = false;
+            MaximoPaletextBox.Enabled     = false;
+            MontoSegundatextBox.Enabled   = false;
+            MontoPale1textBox.Enabled     = false;
+            MontoTripleta1textBox.Enabled = false;
+            MaximoQuinielatextBox.Enabled = false;
+            MaximoTripletatextBox.Enabled = false;
+            HoraApecturadateTimePicker.Enabled = false;
+            HoraCierredateTimePicker.Enabled = false;
+            GuardarButton.Enabled = false;
+
+
+        }
         private void LimpiarCamposRegistroLoteria()
         {
             IdLoteriatextBox.Clear();
@@ -68,21 +94,38 @@ namespace SistemasDeBancas.Registros
             MaximoQuinielatextBox.Clear();
             MaximoTripletatextBox.Clear();
 
-
-
         }
 
         private void GuardarButton_Click(object sender, EventArgs e)
         {
-            //Loteria.Nombre
+            var loteria = new Loterias();
 
-            //if (UsuariosBLL.Guardar(usuario))
-            //{
-               
-            //}
+            loteria.Nombre = NombretextBox.Text;
+            loteria.MontoPrimera   = Utilidades.ToInt(MontoPrimeratextBox.Text);
+            loteria.MontoTercera   = Utilidades.ToInt(MontoTerceratextBox.Text);
+            loteria.MontoPale2     = Utilidades.ToInt(MontoPale2textBox.Text);
+            loteria.MontoTripleta2 = Utilidades.ToInt(MontoTripleta2textBox.Text);
+            loteria.MaximoPale     = Utilidades.ToInt(MaximoPaletextBox.Text);
+            loteria.HoraApectura   =  HoraApecturadateTimePicker.Value;
+            loteria.HoraCierre     =  HoraCierredateTimePicker.Value;
+            loteria.MontoSegunda   = Utilidades.ToInt(MontoSegundatextBox.Text);
+            loteria.MontoPale1     = Utilidades.ToInt(MontoPale1textBox.Text);
+            loteria.MontoTripleta1 = Utilidades.ToInt(MontoTripleta1textBox.Text);
+            loteria.MaximoQuiniela = Utilidades.ToInt(MaximoQuinielatextBox.Text);
+            loteria.MaximoTripleta = Utilidades.ToInt(MaximoTripletatextBox.Text);
+                                                  
 
-            //else
-            //    MessageBox.Show("Error al guardar");
+            if (LoteriasBLL.Guardar(loteria))
+            {
+                MessageBox.Show("Guardardo...");
+                LimpiarCamposRegistroLoteria();
+                GuardarButton.Enabled = false;
+                DesabilitarRegistroLoteria();
+          //      EliminarButton.Enabled = true;
+            }
+
+            else
+                MessageBox.Show("Error al guardar");
         }
     }
 }

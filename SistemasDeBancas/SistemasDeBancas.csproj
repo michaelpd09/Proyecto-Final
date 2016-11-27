@@ -84,6 +84,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Consulta\ConsultaLoteria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Consulta\ConsultaLoteria.Designer.cs">
+      <DependentUpon>ConsultaLoteria.cs</DependentUpon>
+    </Compile>
     <Compile Include="Consulta\ConsultaUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,12 +102,18 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Registros\ModificarUsuarios.cs">
+    <Compile Include="Modificaciones\ModificarLoteria.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Registros\ModificarUsuarios.Designer.cs">
+    <Compile Include="Modificaciones\ModificarLoteria.Designer.cs">
+      <DependentUpon>ModificarLoteria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Modificaciones\ModificarUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modificaciones\ModificarUsuarios.Designer.cs">
       <DependentUpon>ModificarUsuarios.cs</DependentUpon>
     </Compile>
     <Compile Include="Registros\RegistrarLoteria.cs">
@@ -123,11 +135,17 @@
     <Compile Include="VentanaPrincipal.Designer.cs">
       <DependentUpon>VentanaPrincipal.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Consulta\ConsultaLoteria.resx">
+      <DependentUpon>ConsultaLoteria.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Consulta\ConsultaUsuarios.resx">
       <DependentUpon>ConsultaUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modificaciones\ModificarLoteria.resx">
+      <DependentUpon>ModificarLoteria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -139,7 +157,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Registros\ModificarUsuarios.resx">
+    <EmbeddedResource Include="Modificaciones\ModificarUsuarios.resx">
       <DependentUpon>ModificarUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Registros\RegistrarLoteria.resx">

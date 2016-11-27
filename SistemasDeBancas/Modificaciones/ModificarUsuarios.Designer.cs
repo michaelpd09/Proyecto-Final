@@ -201,7 +201,7 @@
             this.Controls.Add(this.UsuarioIDTextBox);
             this.Controls.Add(this.label1);
             this.Name = "ModificarUsuarios";
-            this.Text = "ModificarUsuarios";
+            this.Text = "Modificar Usuarios";
             this.Load += new System.EventHandler(this.ModificarUsuarios_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

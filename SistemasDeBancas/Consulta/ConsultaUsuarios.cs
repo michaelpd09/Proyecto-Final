@@ -60,8 +60,8 @@ namespace SistemasDeBancas.Consulta
         private void NuevoButton_Click(object sender, EventArgs e)
         {
 
-            var ru = new RegistroUsuarios();
-            ru.Visible = true;
+            var registroUsuarios = new RegistroUsuarios();
+            registroUsuarios.Visible = true;
            
             Close();
         }

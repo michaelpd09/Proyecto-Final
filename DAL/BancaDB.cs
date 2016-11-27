@@ -15,7 +15,7 @@ namespace DAL
         }
         public virtual DbSet<Usuarios> usuarios { get; set; }
         public virtual DbSet<Ticket> ticket { get; set;  }
-        public virtual DbSet<Loteria> loteria { get; set; }
+        public virtual DbSet<Loterias> loterias { get; set; }
         public virtual DbSet<Detalles> detalle { get; set; }
     }
 }

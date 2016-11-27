@@ -43,11 +43,11 @@
             this.label5 = new System.Windows.Forms.Label();
             this.ConfirmarTextBox = new System.Windows.Forms.TextBox();
             this.errorProvider4 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.FechadateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.NuevoButton = new System.Windows.Forms.Button();
             this.SalirButton = new System.Windows.Forms.Button();
             this.GuardarButton = new System.Windows.Forms.Button();
-            this.BuscarButton = new System.Windows.Forms.Button();
-            this.FechadateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.ConsultarUsuarioButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider3)).BeginInit();
@@ -178,6 +178,15 @@
             // 
             this.errorProvider4.ContainerControl = this;
             // 
+            // FechadateTimePicker
+            // 
+            this.FechadateTimePicker.Enabled = false;
+            this.FechadateTimePicker.Location = new System.Drawing.Point(346, 22);
+            this.FechadateTimePicker.Name = "FechadateTimePicker";
+            this.FechadateTimePicker.Size = new System.Drawing.Size(200, 20);
+            this.FechadateTimePicker.TabIndex = 18;
+            this.FechadateTimePicker.Value = new System.DateTime(2016, 11, 25, 0, 0, 0, 0);
+            // 
             // NuevoButton
             // 
             this.NuevoButton.BackgroundImage = global::SistemasDeBancas.Properties.Resources.New;
@@ -224,29 +233,20 @@
             this.GuardarButton.UseVisualStyleBackColor = true;
             this.GuardarButton.Click += new System.EventHandler(this.GuardarButton_Click_1);
             // 
-            // BuscarButton
+            // ConsultarUsuarioButton
             // 
-            this.BuscarButton.BackgroundImage = global::SistemasDeBancas.Properties.Resources.Search_icon;
-            this.BuscarButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.BuscarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BuscarButton.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.BuscarButton.Location = new System.Drawing.Point(314, 67);
-            this.BuscarButton.Name = "BuscarButton";
-            this.BuscarButton.Size = new System.Drawing.Size(137, 52);
-            this.BuscarButton.TabIndex = 10;
-            this.BuscarButton.Text = "Buscar";
-            this.BuscarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BuscarButton.UseVisualStyleBackColor = true;
-            this.BuscarButton.Click += new System.EventHandler(this.BuscarButton_Click);
-            // 
-            // FechadateTimePicker
-            // 
-            this.FechadateTimePicker.Enabled = false;
-            this.FechadateTimePicker.Location = new System.Drawing.Point(346, 22);
-            this.FechadateTimePicker.Name = "FechadateTimePicker";
-            this.FechadateTimePicker.Size = new System.Drawing.Size(200, 20);
-            this.FechadateTimePicker.TabIndex = 18;
-            this.FechadateTimePicker.Value = new System.DateTime(2016, 11, 25, 0, 0, 0, 0);
+            this.ConsultarUsuarioButton.BackgroundImage = global::SistemasDeBancas.Properties.Resources.Search_icon;
+            this.ConsultarUsuarioButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ConsultarUsuarioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ConsultarUsuarioButton.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.ConsultarUsuarioButton.Location = new System.Drawing.Point(314, 67);
+            this.ConsultarUsuarioButton.Name = "ConsultarUsuarioButton";
+            this.ConsultarUsuarioButton.Size = new System.Drawing.Size(137, 52);
+            this.ConsultarUsuarioButton.TabIndex = 10;
+            this.ConsultarUsuarioButton.Text = "Consultar Usuario";
+            this.ConsultarUsuarioButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.ConsultarUsuarioButton.UseVisualStyleBackColor = true;
+            this.ConsultarUsuarioButton.Click += new System.EventHandler(this.BuscarButton_Click);
             // 
             // RegistroUsuarios
             // 
@@ -262,7 +262,7 @@
             this.Controls.Add(this.SalirButton);
             this.Controls.Add(this.GuardarButton);
             this.Controls.Add(this.NuevoButton);
-            this.Controls.Add(this.BuscarButton);
+            this.Controls.Add(this.ConsultarUsuarioButton);
             this.Controls.Add(this.ClaveTextBox);
             this.Controls.Add(this.NombreTextBox);
             this.Controls.Add(this.label3);
@@ -299,7 +299,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ErrorProvider errorProvider4;
         private System.Windows.Forms.Button NuevoButton;
-        private System.Windows.Forms.Button BuscarButton;
+        private System.Windows.Forms.Button ConsultarUsuarioButton;
         public System.Windows.Forms.ComboBox PerfilComboBox;
         public System.Windows.Forms.DateTimePicker FechadateTimePicker;
     }
