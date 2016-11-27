@@ -28,11 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VentanaPrincipal));
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.VentagroupBox = new System.Windows.Forms.GroupBox();
+            this.Agregarbutton = new System.Windows.Forms.Button();
             this.Total = new System.Windows.Forms.TextBox();
             this.LoteriasComboBox = new System.Windows.Forms.ComboBox();
             this.Numero = new System.Windows.Forms.TextBox();
@@ -56,12 +58,13 @@
             this.AnularButton = new System.Windows.Forms.Button();
             this.Nuevobutton = new System.Windows.Forms.Button();
             this.ReimprimirButton = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.SalirButton = new System.Windows.Forms.Button();
             this.UsuarioButton = new System.Windows.Forms.Button();
             this.ReporteButton = new System.Windows.Forms.Button();
-            this.Agregarbutton = new System.Windows.Forms.Button();
             this.OpcionesgroupBox = new System.Windows.Forms.GroupBox();
+            this.Hora = new System.Windows.Forms.Label();
+            this.Loteriabutton = new System.Windows.Forms.Button();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.VentagroupBox.SuspendLayout();
             this.NumerogroupBox.SuspendLayout();
             this.OpcionesgroupBox.SuspendLayout();
@@ -107,6 +110,7 @@
             // 
             this.VentagroupBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("VentagroupBox.BackgroundImage")));
             this.VentagroupBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.VentagroupBox.Controls.Add(this.Agregarbutton);
             this.VentagroupBox.Controls.Add(this.Total);
             this.VentagroupBox.Controls.Add(this.LoteriasComboBox);
             this.VentagroupBox.Controls.Add(this.Numero);
@@ -124,6 +128,24 @@
             this.VentagroupBox.TabIndex = 32;
             this.VentagroupBox.TabStop = false;
             this.VentagroupBox.Text = "Venta";
+            // 
+            // Agregarbutton
+            // 
+            this.Agregarbutton.AccessibleName = "";
+            this.Agregarbutton.BackColor = System.Drawing.Color.Transparent;
+            this.Agregarbutton.BackgroundImage = global::SistemasDeBancas.Properties.Resources.img;
+            this.Agregarbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Agregarbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Agregarbutton.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.Agregarbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Agregarbutton.Location = new System.Drawing.Point(405, 70);
+            this.Agregarbutton.Name = "Agregarbutton";
+            this.Agregarbutton.Size = new System.Drawing.Size(140, 34);
+            this.Agregarbutton.TabIndex = 28;
+            this.Agregarbutton.Text = "Agregar";
+            this.Agregarbutton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Agregarbutton.UseVisualStyleBackColor = false;
+            this.Agregarbutton.Click += new System.EventHandler(this.Agregarbutton_Click);
             // 
             // Total
             // 
@@ -322,10 +344,10 @@
             this.Tripleta.AccessibleName = "";
             this.Tripleta.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tripleta.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.Tripleta.Location = new System.Drawing.Point(371, 19);
+            this.Tripleta.Location = new System.Drawing.Point(337, 19);
             this.Tripleta.Margin = new System.Windows.Forms.Padding(1);
             this.Tripleta.Name = "Tripleta";
-            this.Tripleta.Size = new System.Drawing.Size(174, 295);
+            this.Tripleta.Size = new System.Drawing.Size(208, 295);
             this.Tripleta.TabIndex = 10;
             this.Tripleta.UseCompatibleStateImageBehavior = false;
             // 
@@ -335,10 +357,10 @@
             this.Pale.BackColor = System.Drawing.Color.White;
             this.Pale.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Pale.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.Pale.Location = new System.Drawing.Point(191, 19);
+            this.Pale.Location = new System.Drawing.Point(169, 17);
             this.Pale.Margin = new System.Windows.Forms.Padding(1);
             this.Pale.Name = "Pale";
-            this.Pale.Size = new System.Drawing.Size(174, 295);
+            this.Pale.Size = new System.Drawing.Size(151, 295);
             this.Pale.TabIndex = 27;
             this.Pale.UseCompatibleStateImageBehavior = false;
             // 
@@ -353,7 +375,7 @@
             this.Quiniela.Location = new System.Drawing.Point(11, 19);
             this.Quiniela.Margin = new System.Windows.Forms.Padding(1);
             this.Quiniela.Name = "Quiniela";
-            this.Quiniela.Size = new System.Drawing.Size(175, 295);
+            this.Quiniela.Size = new System.Drawing.Size(137, 295);
             this.Quiniela.TabIndex = 26;
             this.Quiniela.UseCompatibleStateImageBehavior = false;
             // 
@@ -366,7 +388,7 @@
             this.GuardarButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GuardarButton.ForeColor = System.Drawing.Color.DodgerBlue;
             this.GuardarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.GuardarButton.Location = new System.Drawing.Point(29, 121);
+            this.GuardarButton.Location = new System.Drawing.Point(29, 66);
             this.GuardarButton.Name = "GuardarButton";
             this.GuardarButton.Size = new System.Drawing.Size(136, 48);
             this.GuardarButton.TabIndex = 21;
@@ -383,7 +405,7 @@
             this.AnularButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AnularButton.ForeColor = System.Drawing.Color.DodgerBlue;
             this.AnularButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.AnularButton.Location = new System.Drawing.Point(29, 286);
+            this.AnularButton.Location = new System.Drawing.Point(29, 176);
             this.AnularButton.Name = "AnularButton";
             this.AnularButton.Size = new System.Drawing.Size(136, 48);
             this.AnularButton.TabIndex = 22;
@@ -400,7 +422,7 @@
             this.Nuevobutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Nuevobutton.ForeColor = System.Drawing.Color.DodgerBlue;
             this.Nuevobutton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Nuevobutton.Location = new System.Drawing.Point(29, 176);
+            this.Nuevobutton.Location = new System.Drawing.Point(29, 231);
             this.Nuevobutton.Name = "Nuevobutton";
             this.Nuevobutton.Size = new System.Drawing.Size(136, 48);
             this.Nuevobutton.TabIndex = 23;
@@ -418,26 +440,13 @@
             this.ReimprimirButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ReimprimirButton.ForeColor = System.Drawing.Color.DodgerBlue;
             this.ReimprimirButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.ReimprimirButton.Location = new System.Drawing.Point(29, 231);
+            this.ReimprimirButton.Location = new System.Drawing.Point(29, 121);
             this.ReimprimirButton.Name = "ReimprimirButton";
             this.ReimprimirButton.Size = new System.Drawing.Size(136, 48);
             this.ReimprimirButton.TabIndex = 24;
             this.ReimprimirButton.Text = "Reimprimir";
             this.ReimprimirButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.ReimprimirButton.UseVisualStyleBackColor = false;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.CalendarTitleForeColor = System.Drawing.Color.DodgerBlue;
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(29, 22);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(136, 26);
-            this.dateTimePicker1.TabIndex = 16;
-            this.dateTimePicker1.TabStop = false;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // SalirButton
             // 
@@ -465,7 +474,7 @@
             this.UsuarioButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UsuarioButton.ForeColor = System.Drawing.Color.DodgerBlue;
             this.UsuarioButton.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.UsuarioButton.Location = new System.Drawing.Point(29, 396);
+            this.UsuarioButton.Location = new System.Drawing.Point(29, 286);
             this.UsuarioButton.Name = "UsuarioButton";
             this.UsuarioButton.Size = new System.Drawing.Size(136, 48);
             this.UsuarioButton.TabIndex = 26;
@@ -483,7 +492,7 @@
             this.ReporteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ReporteButton.ForeColor = System.Drawing.Color.DodgerBlue;
             this.ReporteButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.ReporteButton.Location = new System.Drawing.Point(29, 341);
+            this.ReporteButton.Location = new System.Drawing.Point(29, 396);
             this.ReporteButton.Name = "ReporteButton";
             this.ReporteButton.Size = new System.Drawing.Size(136, 48);
             this.ReporteButton.TabIndex = 27;
@@ -491,33 +500,15 @@
             this.ReporteButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.ReporteButton.UseVisualStyleBackColor = false;
             // 
-            // Agregarbutton
-            // 
-            this.Agregarbutton.AccessibleName = "";
-            this.Agregarbutton.BackColor = System.Drawing.Color.Transparent;
-            this.Agregarbutton.BackgroundImage = global::SistemasDeBancas.Properties.Resources.img;
-            this.Agregarbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.Agregarbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Agregarbutton.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.Agregarbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Agregarbutton.Location = new System.Drawing.Point(29, 66);
-            this.Agregarbutton.Name = "Agregarbutton";
-            this.Agregarbutton.Size = new System.Drawing.Size(136, 48);
-            this.Agregarbutton.TabIndex = 28;
-            this.Agregarbutton.Text = "Agregar";
-            this.Agregarbutton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.Agregarbutton.UseVisualStyleBackColor = false;
-            this.Agregarbutton.Click += new System.EventHandler(this.Agregarbutton_Click);
-            // 
             // OpcionesgroupBox
             // 
             this.OpcionesgroupBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("OpcionesgroupBox.BackgroundImage")));
             this.OpcionesgroupBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.OpcionesgroupBox.Controls.Add(this.Agregarbutton);
+            this.OpcionesgroupBox.Controls.Add(this.Hora);
+            this.OpcionesgroupBox.Controls.Add(this.Loteriabutton);
             this.OpcionesgroupBox.Controls.Add(this.ReporteButton);
             this.OpcionesgroupBox.Controls.Add(this.UsuarioButton);
             this.OpcionesgroupBox.Controls.Add(this.SalirButton);
-            this.OpcionesgroupBox.Controls.Add(this.dateTimePicker1);
             this.OpcionesgroupBox.Controls.Add(this.ReimprimirButton);
             this.OpcionesgroupBox.Controls.Add(this.Nuevobutton);
             this.OpcionesgroupBox.Controls.Add(this.AnularButton);
@@ -530,6 +521,39 @@
             this.OpcionesgroupBox.TabIndex = 34;
             this.OpcionesgroupBox.TabStop = false;
             this.OpcionesgroupBox.Text = "Opciones";
+            // 
+            // Hora
+            // 
+            this.Hora.AutoSize = true;
+            this.Hora.BackColor = System.Drawing.Color.Transparent;
+            this.Hora.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Hora.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.Hora.Location = new System.Drawing.Point(9, 28);
+            this.Hora.Name = "Hora";
+            this.Hora.Size = new System.Drawing.Size(0, 24);
+            this.Hora.TabIndex = 35;
+            // 
+            // Loteriabutton
+            // 
+            this.Loteriabutton.AccessibleName = "";
+            this.Loteriabutton.BackColor = System.Drawing.Color.Transparent;
+            this.Loteriabutton.BackgroundImage = global::SistemasDeBancas.Properties.Resources.Actions_user_group_new_icon;
+            this.Loteriabutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Loteriabutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Loteriabutton.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.Loteriabutton.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.Loteriabutton.Location = new System.Drawing.Point(29, 341);
+            this.Loteriabutton.Name = "Loteriabutton";
+            this.Loteriabutton.Size = new System.Drawing.Size(136, 48);
+            this.Loteriabutton.TabIndex = 28;
+            this.Loteriabutton.Text = "Loteria";
+            this.Loteriabutton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Loteriabutton.UseVisualStyleBackColor = false;
+            this.Loteriabutton.Click += new System.EventHandler(this.Loteriabutton_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
             // 
             // VentanaPrincipal
             // 
@@ -554,6 +578,7 @@
             this.NumerogroupBox.ResumeLayout(false);
             this.NumerogroupBox.PerformLayout();
             this.OpcionesgroupBox.ResumeLayout(false);
+            this.OpcionesgroupBox.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -587,11 +612,13 @@
         public System.Windows.Forms.Button AnularButton;
         public System.Windows.Forms.Button Nuevobutton;
         public System.Windows.Forms.Button ReimprimirButton;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Button SalirButton;
         public System.Windows.Forms.Button UsuarioButton;
         public System.Windows.Forms.Button ReporteButton;
         public System.Windows.Forms.Button Agregarbutton;
         private System.Windows.Forms.GroupBox OpcionesgroupBox;
+        private System.Windows.Forms.Label Hora;
+        public System.Windows.Forms.Button Loteriabutton;
+        private System.Windows.Forms.Timer timer1;
     }
 }

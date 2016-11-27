@@ -104,6 +104,12 @@
     <Compile Include="Registros\ModificarUsuarios.Designer.cs">
       <DependentUpon>ModificarUsuarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="Registros\RegistrarLoteria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registros\RegistrarLoteria.Designer.cs">
+      <DependentUpon>RegistrarLoteria.cs</DependentUpon>
+    </Compile>
     <Compile Include="Registros\RegistroUsuarios.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,6 +141,9 @@
     </Compile>
     <EmbeddedResource Include="Registros\ModificarUsuarios.resx">
       <DependentUpon>ModificarUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registros\RegistrarLoteria.resx">
+      <DependentUpon>RegistrarLoteria.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Registros\RegistroUsuarios.resx">
       <DependentUpon>RegistroUsuarios.cs</DependentUpon>

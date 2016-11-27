@@ -58,10 +58,9 @@ namespace SistemasDeBancas
                 ClaveTextBox.Clear();
                 ConfirmarTextBox.Clear();
                 PerfilComboBox.Text = "";
-            }
-                  
+            }  
 
-                else
+             else
                     MessageBox.Show("Error al guardar");
 
             

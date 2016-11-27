@@ -24,6 +24,6 @@ namespace Entidades
         public int MaximoQuiniela { get; set; }
         public int MaximoPale { get; set; }
         public int MaximoTripleta { get; set; }
-        public int MontoJugado { get; set; }
+       
     }
 }

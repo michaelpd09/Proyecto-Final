@@ -1,4 +1,5 @@
 ﻿using SistemasDeBancas;
+using SistemasDeBancas.Registros;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -49,7 +50,8 @@ namespace SistemasDeBancas
         {
            
             MaximizeBox = false;
-            
+            timer1.Enabled = true;
+
 
         }
        
@@ -137,6 +139,17 @@ namespace SistemasDeBancas
         private int Length(string text)
         {
             throw new NotImplementedException();
+        }
+
+        private void timer1_Tick_1(object sender, EventArgs e)
+        {
+            Hora.Text = DateTime.Now.ToString();
+        }
+
+        private void Loteriabutton_Click(object sender, EventArgs e)
+        {
+            var RL = new Registros.RegistrarLoteria();
+            RL.Visible = true;
         }
     }
 }

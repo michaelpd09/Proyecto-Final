@@ -15,7 +15,7 @@ namespace BLL
             bool retorno = false;
             try
             {
-                UsuariosDB db = new UsuariosDB();
+                BancaDB db = new BancaDB();
                 db.usuarios.Add(usuario);
                 db.SaveChanges();
                 retorno = true;
@@ -31,7 +31,7 @@ namespace BLL
         public static bool Eliminar(int ID)
         {
             bool retorno = false;
-            var db = new UsuariosDB();
+            var db = new BancaDB();
             Usuarios usuario = Buscar(ID);
             if (usuario != null)
             {
@@ -44,7 +44,7 @@ namespace BLL
 
         public static Usuarios Buscar(int ID)
         {
-            var db = new UsuariosDB();
+            var db = new BancaDB();
 
             return db.usuarios.Find(ID);
 
@@ -52,7 +52,7 @@ namespace BLL
 
         public static void Modificar(Usuarios usuario)
         {
-            var db = new UsuariosDB();
+            var db = new BancaDB();
             db.Entry(usuario).State = EntityState.Modified;
             db.SaveChanges();
             
@@ -62,18 +62,18 @@ namespace BLL
         {
             List<Usuarios> lista = new List<Usuarios>();
 
-            var db = new UsuariosDB();
+            var db = new BancaDB();
 
             lista = db.usuarios.ToList();
 
             return lista;
         }
-
+       
         public static List <Usuarios> GetListaUsuarioID(int usuarioID)
         {
             List<Usuarios> lista = new List<Usuarios>();
 
-            var db = new UsuariosDB();
+            var db = new BancaDB();
 
             lista = db.usuarios.Where(p => p.UsuarioID == usuarioID) .ToList();
 
@@ -83,7 +83,7 @@ namespace BLL
         public static List<Usuarios> GetListaUsuario(string Usuario)
         {
             List<Usuarios> lista = new List<Usuarios>();
-            UsuariosDB db = new UsuariosDB();
+            BancaDB db = new BancaDB();
             lista = db.usuarios.Where(p => p.Nombre == Usuario).ToList();
             return lista;
         }
@@ -91,7 +91,7 @@ namespace BLL
         public static List<Usuarios> GetListaContrasena(string Clave)
         {
             List<Usuarios> lista = new List<Usuarios>();
-            UsuariosDB db = new UsuariosDB();
+            BancaDB db = new BancaDB();
             lista = db.usuarios.Where(p => p.Clave == Clave).ToList();
             return lista;
         }

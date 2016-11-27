@@ -24,7 +24,7 @@ namespace SistemasDeBancas.Consulta
         {
             this.DatosDataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             this.DatosDataGridView.MultiSelect = false;
-
+           
             if (CamposComboBox.SelectedItem.ToString() == "UsuarioID")
             {
                 if (!String.IsNullOrEmpty(FiltroTextBox.Text))
