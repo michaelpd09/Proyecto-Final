@@ -47,6 +47,9 @@ namespace SistemasDeBancas.Consulta
                
             }
            DatosDataGridView.DataSource = lista;
+            DatosDataGridView.Columns.RemoveAt(2);
+            //DatosDataGridView.Columns.RemoveAt(2);
+
             EliminarButton.Enabled = true;
             EditarButton.Enabled = true;
 

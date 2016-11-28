@@ -96,10 +96,10 @@
     <Compile Include="Consulta\ConsultaUsuarios.Designer.cs">
       <DependentUpon>ConsultaUsuarios.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login.cs">
+    <Compile Include="Login\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
+    <Compile Include="Login\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Modificaciones\ModificarLoteria.cs">
@@ -141,7 +141,7 @@
     <EmbeddedResource Include="Consulta\ConsultaUsuarios.resx">
       <DependentUpon>ConsultaUsuarios.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
+    <EmbeddedResource Include="Login\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Modificaciones\ModificarLoteria.resx">
@@ -184,21 +184,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\open.png" />
-    <None Include="Resources\Search-icon.png" />
-    <None Include="Resources\buscar.png" />
-    <None Include="Resources\img.jpg" />
-    <None Include="Resources\unpacked-invitacion.jpg" />
-    <None Include="Resources\Salir.png" />
-    <None Include="Resources\Actions-user-group-new-icon.png" />
-    <None Include="Resources\perfir.png" />
-    <None Include="Resources\Reporte.png" />
-    <None Include="Resources\Anular.png" />
-    <None Include="Resources\Reimprimir.png" />
-    <None Include="Resources\New.png" />
-    <None Include="Resources\floppy-drive-3-12-icon.png" />
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.0">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
@@ -233,7 +218,10 @@
       <DependentUpon>BancaDB.mdf</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <None Include="Resources\dubai_uae_buildings_skyscrapers_night_96720_3840x2160.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Reportes\" />
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

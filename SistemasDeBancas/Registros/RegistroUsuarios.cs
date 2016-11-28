@@ -51,6 +51,7 @@ namespace SistemasDeBancas
             usuario.Clave = ClaveTextBox.Text;
             usuario.Fecha = FechadateTimePicker.Value;
            
+           
             if (UsuariosBLL.Guardar(usuario))
             {
                 MessageBox.Show("Guardado.....");

@@ -84,7 +84,7 @@ namespace BLL
         {
             List<Usuarios> lista = new List<Usuarios>();
             BancaDB db = new BancaDB();
-            lista = db.usuarios.Where(p => p.Nombre == Usuario).ToList();
+            lista = db.usuarios.Where(p => (p.Nombre.Contains(Usuario))).ToList();
             return lista;
         }
 

@@ -37,6 +37,7 @@
             this.EditarButton = new System.Windows.Forms.Button();
             this.NuevoButton = new System.Windows.Forms.Button();
             this.Buscarbutton = new System.Windows.Forms.Button();
+            this.UsuarioID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DatosDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,6 +80,8 @@
             // DatosDataGridView
             // 
             this.DatosDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DatosDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.UsuarioID});
             this.DatosDataGridView.Location = new System.Drawing.Point(12, 63);
             this.DatosDataGridView.Name = "DatosDataGridView";
             this.DatosDataGridView.Size = new System.Drawing.Size(585, 245);
@@ -164,6 +167,12 @@
             this.Buscarbutton.UseVisualStyleBackColor = true;
             this.Buscarbutton.Click += new System.EventHandler(this.Buscarbutton_Click);
             // 
+            // UsuarioID
+            // 
+            this.UsuarioID.HeaderText = "Usuario";
+            this.UsuarioID.Name = "UsuarioID";
+            this.UsuarioID.ReadOnly = true;
+            // 
             // ConsultaUsuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -198,5 +207,6 @@
         private System.Windows.Forms.Button NuevoButton;
         private System.Windows.Forms.Button SalirButton;
         public System.Windows.Forms.DataGridView DatosDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn UsuarioID;
     }
 }
